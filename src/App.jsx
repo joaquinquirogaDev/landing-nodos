@@ -1,12 +1,13 @@
 import './App.css'
 import Sections from './Components/Sections/Sections'
 import Footer from './Components/Footer/Footer'
+import Form from './Components/Form/Form'
 function App() {
 
   return (
     <>
         {/* <Sections/> */}
-        <Footer/>
+        <Form/>
     </>
   )
 }
