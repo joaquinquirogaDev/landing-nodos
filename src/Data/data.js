@@ -1,4 +1,5 @@
 const number = 3
+const seccionesFooter = 3
 const data = [
     {
         nombre: 'nombre 1',
@@ -26,7 +27,36 @@ const dropsRedes = [
         nombre: 'Facebook'
     }
 ]
+const Secciones = {
+    NumerosTelefonos: [
+        {
+            Telefonos: 23213
+        },
+        {
+            TelefonoFijo: 2321312
+        },
+        {
+            Fax: 12312
+        }
+    ],
+    Mail: [
+        {
+            Contacto1: 'ejemplo1'
+        },
+        {
+            Contacto2: 'ejemplo2'
+        },
+        {
+            Contacto3: 'ejemplo3'
+        }
+    ],
+    Visitanos: [
+        {lugar1: 'Lugar1'},
+        {Lugar2: 'Lugar2'},
+        {Lugar3: 'Lugar3'}
+    ]
+}
 
 
-export {data, dropsRedes, number}
+export { data, dropsRedes, number, seccionesFooter, Secciones }
 
