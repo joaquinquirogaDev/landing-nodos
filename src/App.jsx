@@ -1,47 +1,31 @@
 import './App.css'
-import { Hero, Navbar, Sections } from './Components'
+import React, { useState } from 'react';
+import { Footer, Hero, Navbar, Sections } from './Components'
+import { Novedades } from './Components/Novedades';
+import { Contacto } from './Components/Contacto';
 function App() {
+  const [activeComponent, setActiveComponent] = useState('Home');
+
+  const componentes = {
+    Home: Hero,
+    Niveles: Sections,
+    Novedades: Novedades,
+    Contacto: Contacto
+  };
+
+  const CurrentComponent = componentes[activeComponent]
+
 
   return (
     <>
-      {/* <head> */}
-        <Navbar />
-      {/* </head> */}
-      <Hero />
-      {/* <div> */}
-        <Sections />
-      {/* </div> */}
+      <Navbar setActiveComponent={setActiveComponent} />
+      <div>
+        <CurrentComponent />
+      </div>
+      <Footer />
     </>
   )
 }
 
 export default App
 
-//useRef
-
-// import React, { useRef } from 'react';
-// import Header from './Header';
-
-// function LandingPage() {
-//   const componenteEspecificoRef = useRef(null);
-
-//   const scrollToComponent = () => {
-//     if (componenteEspecificoRef.current) {
-//       componenteEspecificoRef.current.scrollIntoView({ behavior: 'smooth' });
-//     }
-//   };
-
-//   return (
-//     <div>
-//       <Header scrollToComponent={scrollToComponent} />
-
-//       {/* Otros componentes y contenido */}
-
-//       <div ref={componenteEspecificoRef} id="componente-especifico">
-//         {/* Contenido del componente específico */}
-//       </div>
-//     </div>
-//   );
-// }
-
-// export default LandingPage;

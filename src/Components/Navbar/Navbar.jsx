@@ -2,19 +2,39 @@
 import logo from '../../assets/logoSanAgustin.png'
 //styles
 import style from './Navbar.module.css'
-export const Navbar = () => {
+export const Navbar = ({ setActiveComponent }) => {
+
+
+
     return (
         <div className={style.NavbarContainer}>
             <div className={style.imgNavbar}>
                 <img src={logo} alt="" />
             </div>
-
             <div className={style.NavbarItem}>
-                <li>HOME</li>
-                <li>NIVELES</li>
-                <li>NOVEDADES</li>
-                <li>CONTACTO</li>
+                <li
+                    onClick={() => setActiveComponent('Home')}
+                >
+                    HOME
+                </li>
+                <li
+                    onClick={() => setActiveComponent('Niveles')}
+
+                >
+                    NIVELES
+                </li>
+                <li
+                    onClick={() => setActiveComponent('Novedades')}
+                >
+                    NOVEDADES
+                </li>
+                <li
+                    onClick={() => setActiveComponent('Contacto')}
+                >
+                    CONTACTO
+                </li>
             </div>
         </div>
     )
 }
+
