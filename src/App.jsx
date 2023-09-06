@@ -4,9 +4,13 @@ function App() {
 
   return (
     <>
-      <Navbar />
+      {/* <head> */}
+        <Navbar />
+      {/* </head> */}
       <Hero />
-      <Sections />
+      {/* <div> */}
+        <Sections />
+      {/* </div> */}
     </>
   )
 }
