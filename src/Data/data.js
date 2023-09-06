@@ -1,4 +1,4 @@
-const number = 3
+const number = 2
 const seccionesFooter = 3
 const data = [
     {
@@ -51,9 +51,9 @@ const Secciones = {
         }
     ],
     Visitanos: [
-        {lugar1: 'Lugar1'},
-        {Lugar2: 'Lugar2'},
-        {Lugar3: 'Lugar3'}
+        { lugar1: 'Lugar1' },
+        { Lugar2: 'Lugar2' },
+        { Lugar3: 'Lugar3' }
     ]
 }
 

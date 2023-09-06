@@ -1,0 +1,110 @@
+.heroContainer {
+    position: relative;
+    height: calc(100vh - 93px);
+
+}
+
+.heroContainer .imgHero {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+.heroCard {
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    background-color: #FFFFFF33;
+    padding: 40px;
+    border-radius: 20px;
+}
+
+.heroInfo {
+    background-color: #F9D955;
+    padding: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    border-radius: 20px;
+}
+
+.heroInfo img {
+    width: 100px;
+    height: auto;
+    object-fit: cover;
+}
+
+.heroRight {
+    flex: 1;
+}
+
+.heroInfo .textBue,
+.textBueTitulo {
+    color: #0049AB;
+    text-align: center;
+}
+
+.textBue {
+    font-size: 20px;
+}
+
+.textBueTitulo {
+    font-size: 35px;
+}
+
+.textRed {
+    color: var(--color-red);
+}
+
+/* hero abajo */
+
+.heroDown {
+    padding: 25px 65px;
+    color: white;
+    width: 100%;
+    background-color: var(--color-blueOscuro);
+}
+
+.heroDown .title {
+    margin-top: 10px;
+}
+
+.heroDownLeft {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+.heroDownLeft img {
+    width: 138px;
+    height: auto;
+    margin-right: 20px;
+}
+
+
+.heroDownInfoRight {
+    flex: 1;
+}
+
+
+.heroDownInfoRight p {
+    font-size: 16px;
+}
+
+/* .heroDown button {
+    width: 65%;
+    margin-top: 20px;
+    padding: 13px;
+    background-color: var(--color-blue);
+    color: white;
+    font-family: var(--font-lato);
+    border: none;
+    border-radius: 5px;
+    border: 5px solid white;
+    font-size: 25px;
+    font-weight: bold;
+    cursor: pointer;
+} */

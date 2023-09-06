@@ -1,0 +1,25 @@
+.NavbarContainer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 50px;
+    background-color: var(--color-yellow);
+}
+
+
+
+.NavbarContainer img {
+    width: 50px;
+    object-fit: cover;
+}
+
+.NavbarItem {
+    display: flex;
+    gap: 10px;
+    list-style: none;
+    color: #1C57A7;
+}
+
+.NavbarItem li {
+    cursor: pointer;
+}
