@@ -1,24 +1,42 @@
 // const number = 2
+import nivelPrimario from '../assets/NivelPrimario.png'
+import nivelIncial from '../assets/NivelInicial.png'
 const seccionesFooter = 3
-const data = [
+const nivel = [
     {
-        nombre: 'nombre 1',
+        titulo: 'Nivel Primario',
+        img: nivelPrimario,
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
     {
-        nombre: 'nombre 2',
+        titulo: 'Nivel Inicial',
+        img: nivelIncial,
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
-    {
-        nombre: 'nombre 3',
-        subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
-    },
-    {
-        nombre: 'nombre 4',
-        subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
-    },
-]
 
+]
+const testimonios = [
+    {
+        nombre: 'Alan',
+        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        img: ''
+    },
+    {
+        nombre: 'Alan',
+        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        img: ''
+    },
+    {
+        nombre: 'Alan',
+        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        img: ''
+    },
+    {
+        nombre: 'Alan',
+        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        img: ''
+    }
+]
 const dropsRedes = [
     {
         nombre: 'Instagram'
@@ -64,5 +82,5 @@ const Secciones = {
 }
 
 
-export { data, dropsRedes, seccionesFooter, Secciones }
+export { nivel, dropsRedes, seccionesFooter, Secciones, testimonios }
 

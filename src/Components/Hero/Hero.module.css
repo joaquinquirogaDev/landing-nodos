@@ -34,6 +34,7 @@
     width: 100px;
     height: auto;
     object-fit: cover;
+    border: 2px solid white;
 }
 
 .heroRight {
@@ -52,6 +53,8 @@
 
 .textBueTitulo {
     font-size: 35px;
+    text-decoration: underline;
+    margin-bottom: 10px;
 }
 
 .textRed {

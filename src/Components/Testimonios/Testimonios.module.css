@@ -1,0 +1,28 @@
+.TestimoniosBox {
+    padding: 20px 40px;
+    background-color: #FEFEFD;
+}
+
+.TestimonioUp {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.TestimoniosLeftTtile {
+    font-weight: 800;
+    color: #212539;
+}
+
+.parrafo {
+    color: #212539;
+    font-weight: 700;
+}
+
+.imgNodos img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

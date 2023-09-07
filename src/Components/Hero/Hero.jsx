@@ -2,6 +2,10 @@ import style from './Hero.module.css'
 //images
 import hero from '../../assets/hero.png'
 import logo from '../../assets/logoSanAgustin.png'
+//componentes
+import { NivelesLectivo } from '../NivelesLectivo/NivelesLectivo'
+import { CardInscripciones } from '../CardInscripciones/CardInscripciones'
+import { Testimonios } from '../Testimonios/Testimonios'
 
 export const Hero = () => {
     return (
@@ -43,6 +47,9 @@ export const Hero = () => {
                     Somos  personas que hacen posible esta misión y cómo se refleja en nuestra vibrante comunidad educativa. Juntos, avanzamos hacia un futuro de aprendizaje y crecimiento compartido.</p>
 
             </div>
+            <NivelesLectivo />
+            <CardInscripciones />
+            <Testimonios />
         </>
     )
 }

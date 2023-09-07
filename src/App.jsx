@@ -1,8 +1,9 @@
 import './App.css'
+//hookks
 import React, { useState } from 'react';
-import { Footer, Hero, Navbar, Sections } from './Components'
-import { Novedades } from './Components/Novedades';
-import { Contacto } from './Components/Contacto';
+//componentes
+import { Contacto, Footer, Hero, Navbar, Novedades, Sections } from './Components'
+
 function App() {
   const [activeComponent, setActiveComponent] = useState('Home');
 
@@ -22,7 +23,7 @@ function App() {
       <div>
         <CurrentComponent />
       </div>
-      <Footer />
+      {/*  <Footer /> */}
     </>
   )
 }

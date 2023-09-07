@@ -1,5 +1,12 @@
+export * from './Button/Button';
+export * from './CardInscripciones/CardInscripciones';
+export * from './CardNivelLectivo/CardNivelLectivo';
+export * from './Contacto/Contacto';
 export { default as Footer } from './Footer/Footer';
 export * from './Hero/Hero';
 export * from './Navbar/Navbar';
+export * from './NivelesLectivo/NivelesLectivo';
+export * from './Novedades/Novedades';
 export { default as CardSection } from './Sections/CardSection/CardSection';
 export { default as Sections } from './Sections/Sections';
+export * from './Testimonios/Testimonios';

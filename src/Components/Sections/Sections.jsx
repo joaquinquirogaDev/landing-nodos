@@ -1,4 +1,4 @@
-import { data } from "../../Data/data"
+import { nivel } from "../../Data/data"
 import CardSection from "./CardSection/CardSection"
 import style from './GlobalSection.module.css'
 export default function Sections() {
@@ -6,7 +6,7 @@ export default function Sections() {
     //     data[i] && repeatedData.push(data[i]);
     // }
     return <div className={style.Container}>
-        {data.map((item, key) => (
+        {nivel.map((item, key) => (
             <CardSection key={key} item={item} />
         ))}
     </div>

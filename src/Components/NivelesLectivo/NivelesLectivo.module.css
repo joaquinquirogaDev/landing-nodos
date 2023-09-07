@@ -1,0 +1,12 @@
+.NivelesBox {
+    width: 100%;
+    background-color: white;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+.NivelesContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
