@@ -2,6 +2,12 @@ import style from './Hero.module.css'
 //images
 import hero from '../../assets/hero.png'
 import logo from '../../assets/logoSanAgustin.png'
+import bienvenida from '../../assets/BIENVENIDA.png'
+//componentes
+import { NivelesLectivo } from '../NivelesLectivo/NivelesLectivo'
+import { CardInscripciones } from '../CardInscripciones/CardInscripciones'
+import { Testimonios } from '../Testimonios/Testimonios'
+import { Deporte } from '../Deporte/Deporte'
 
 export const Hero = () => {
     return (
@@ -11,7 +17,7 @@ export const Hero = () => {
 
 
                 <div className={style.heroCard}>
-                    <div className={style.heroInfo}>
+                    {/* <div className={style.heroInfo}>
                         <img src={logo} alt="Colegio San Agustín" />
 
                         <div className={style.heroRight}>
@@ -21,7 +27,8 @@ export const Hero = () => {
 
                             <p className={style.textRed}>EDUCACIÓN INICIAL Y PRIMARIA</p>
                         </div>
-                    </div>
+                    </div> */}
+                    <img className={style.heroCardImg} src={bienvenida} alt="Colegio San Agustin" />
                 </div>
             </div>
             <div className={style.heroDown}>
@@ -43,6 +50,10 @@ export const Hero = () => {
                     Somos  personas que hacen posible esta misión y cómo se refleja en nuestra vibrante comunidad educativa. Juntos, avanzamos hacia un futuro de aprendizaje y crecimiento compartido.</p>
 
             </div>
+            <NivelesLectivo />
+            <CardInscripciones />
+            <Testimonios />
+            <Deporte />
         </>
     )
 }

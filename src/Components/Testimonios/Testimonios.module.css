@@ -1,0 +1,49 @@
+.TestimoniosBox {
+    padding: 20px 40px;
+    background-color: #FEFEFD;
+}
+
+.TestimonioUp {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.TestimoniosLeftTtile {
+    font-weight: 800;
+    color: #212539;
+}
+
+.parrafo {
+    margin-top: 10px;
+    color: #212539;
+    font-weight: 700;
+}
+
+.imgNodos img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+.testimoniosDown{
+    margin-top: 40px;
+    
+}
+.testimoniosDownTitle{
+    font-size: 28px;
+    font-weight: 800;
+}
+.testimoniosDownParrafo{
+    font-weight: 400;
+    color: #212539;
+}
+.testimoniosDownCard{
+    margin-top: 40px;
+    width: 100%;
+    display: grid;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+
+}
