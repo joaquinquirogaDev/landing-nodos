@@ -15,11 +15,12 @@
     top: 50%;
     left: 20%;
     transform: translate(-50%, -50%);
-    background-color: #FFFFFF33;
     padding: 40px;
     border-radius: 20px;
 }
-
+.heroCardImg{
+    width: 500px;
+}
 .heroInfo {
     background-color: #F9D955;
     padding: 40px;
@@ -93,8 +94,9 @@
 }
 
 
-.heroDownInfoRight p {
+.heroDown p {
     font-size: 16px;
+    line-height: 23px;
 }
 
 /* .heroDown button {

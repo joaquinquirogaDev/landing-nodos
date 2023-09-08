@@ -1,6 +1,11 @@
 // const number = 2
 import nivelPrimario from '../assets/NivelPrimario.png'
 import nivelIncial from '../assets/NivelInicial.png'
+//images avatar
+import avatar from '../assets/avatar.png'
+import avatar1 from '../assets/avatar1.png'
+import avatar2 from '../assets/avatar2.png'
+import avatar3 from '../assets/avatar3.png'
 const seccionesFooter = 3
 const nivel = [
     {
@@ -19,22 +24,22 @@ const testimonios = [
     {
         nombre: 'Alan',
         descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
-        img: ''
+        img: avatar
     },
     {
-        nombre: 'Alan',
+        nombre: 'Sofia',
         descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
-        img: ''
+        img: avatar1
     },
     {
-        nombre: 'Alan',
-        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
-        img: ''
+        nombre: 'Federico',
+        descripcion: '.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        img: avatar2
     },
     {
-        nombre: 'Alan',
+        nombre: 'Rodrigo',
         descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
-        img: ''
+        img: avatar3
     }
 ]
 const dropsRedes = [

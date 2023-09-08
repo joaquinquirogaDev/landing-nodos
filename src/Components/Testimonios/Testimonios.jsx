@@ -3,6 +3,8 @@ import { Button } from '../Button/Button'
 import style from './Testimonios.module.css'
 //images
 import nodos from '../../assets/DigitaNodos.png'
+import { testimonios } from '../../Data/data'
+import { TestimoniosCard } from '../TestimoniosCard/TestimoniosCard'
 
 export const Testimonios = () => {
     return (
@@ -18,6 +20,20 @@ export const Testimonios = () => {
                 </div>
                 <div className={style.imgNodos}>
                     <img src={nodos} alt="Nodos" />
+                </div>
+            </div>
+
+
+            <div className={style.testimoniosDown}>
+                <h1 className={style.testimoniosDownTitle}>Testimonios de Padres y Estudiantes</h1>
+                <br />
+                <p className={style.testimoniosDownParrafo}>Escucha de primera mano las experiencias y opiniones de nuestros padres y estudiantes sobre su trayectoria en el Colegio San Agustín. Sus palabras son un reflejo de la calidad educativa, el ambiente acogedor y el impacto positivo que nuestra comunidad ha tenido en sus vidas.</p>
+                <div className={style.testimoniosDownCard}>
+                    {
+                        testimonios.map((item,index) => (
+                            <TestimoniosCard key={index} {...item} />
+                        ))
+                    }
                 </div>
             </div>
         </section>
