@@ -1,6 +1,7 @@
 import style from './CardSection.module.css'
 
-export default function CardSection({ item, id, setActiveComponent}) {
+export default function CardSection(data) {
+    const {item, id, setActiveComponent} = data
     return <>
         <div className={style.Container}>
             <h1>{item.nombre}</h1>

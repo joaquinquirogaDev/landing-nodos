@@ -5,9 +5,10 @@ export default function Sections(data) {
     // for (let i = 0; i < 0 + number; i++) {
     //     data[i] && repeatedData.push(data[i]);
     // }
+    const {setActiveComponent} = data
     return <div className={style.Container}>
         {nivel.map((item, key) => (
-            <CardSection key={key} item={item} id={item?.id} setActiveComponent={data.setActiveComponent}/>
+            <CardSection key={key} item={item} id={item?.id} setActiveComponent={setActiveComponent}/>
         ))}
     </div>
 }
