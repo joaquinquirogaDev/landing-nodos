@@ -13,23 +13,23 @@ export const Navbar = ({ setActiveComponent }) => {
             </div>
             <div className={style.NavbarItem}>
                 <li
-                    onClick={() => setActiveComponent('Home')}
+                    onClick={() => setActiveComponent({nombre: 'Home'})}
                 >
                     HOME
                 </li>
                 <li
-                    onClick={() => setActiveComponent('Niveles')}
+                    onClick={() => setActiveComponent({nombre: 'Niveles'})}
 
                 >
                     NIVELES
                 </li>
                 <li
-                    onClick={() => setActiveComponent('Novedades')}
+                    onClick={() => setActiveComponent({nombre: 'Novedades'})}
                 >
                     NOVEDADES
                 </li>
                 <li
-                    onClick={() => setActiveComponent('Contacto')}
+                    onClick={() => setActiveComponent({nombre: 'Contacto'})}
                 >
                     CONTACTO
                 </li>

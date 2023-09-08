@@ -2,18 +2,22 @@
 const seccionesFooter = 3
 const data = [
     {
+        id: 1,
         nombre: 'nombre 1',
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
     {
+        id: 2,
         nombre: 'nombre 2',
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
     {
+        id: 3,
         nombre: 'nombre 3',
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
     {
+        id: 4,
         nombre: 'nombre 4',
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
