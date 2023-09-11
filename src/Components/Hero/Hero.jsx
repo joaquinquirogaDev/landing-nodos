@@ -1,6 +1,9 @@
 import style from './Hero.module.css'
 //images
-import hero from '../../assets/hero.png'
+import hero from '../../assets/carrusel/hero.png'
+import img2 from '../../assets/carrusel/2.png'
+import img3 from '../../assets/carrusel/3.png'
+import img4 from '../../assets/carrusel/4.png'
 import logo from '../../assets/logoSanAgustin.png'
 import bienvenida from '../../assets/BIENVENIDA.png'
 //componentes
@@ -8,13 +11,38 @@ import { NivelesLectivo } from '../NivelesLectivo/NivelesLectivo'
 import { CardInscripciones } from '../CardInscripciones/CardInscripciones'
 import { Testimonios } from '../Testimonios/Testimonios'
 import { Deporte } from '../Deporte/Deporte'
+//swiper
+import { Swiper, SwiperSlide } from 'swiper/react';
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/pagination';
+import 'swiper/css/navigation';
 
 export const Hero = () => {
     return (
         <>
             <div className={style.heroContainer}>
-                <img className={style.imgHero} src={hero} alt="" />
-
+                    <Swiper
+                        spaceBetween={30}
+                        centeredSlides={true}
+                        slidesPerView={1}
+                        autoplay={{
+                        delay: 2500,
+                        disableOnInteraction: false,
+                        }}
+                       
+                        navigation={true}
+                        modules={[Autoplay, Pagination, Navigation]}
+                        className="mySwiper"
+                    >
+                        <SwiperSlide><img className={style.imgHero} src={hero} alt="" /></SwiperSlide>
+                        <SwiperSlide><img className={style.imgHero} src={img2} alt="" /></SwiperSlide>
+                        <SwiperSlide><img className={style.imgHero} src={img3} alt="" /></SwiperSlide>
+                        <SwiperSlide><img className={style.imgHero} src={img4} alt="" /></SwiperSlide>
+                        
+                    </Swiper>
 
                 <div className={style.heroCard}>
                     {/* <div className={style.heroInfo}>

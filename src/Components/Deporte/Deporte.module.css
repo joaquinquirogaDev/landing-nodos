@@ -16,12 +16,13 @@
     transform: translate(-50%, -50%);
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
-    place-items: center;
+    padding: 40px;
 }
 .textDeporte{
     color: white;
     display: flex;
     flex-direction: column;
+    justify-self: start;
 }
 .textDeporte h1{
     font-weight: 800;
@@ -35,6 +36,8 @@
 }
 .imgDeporte{
     width: 400px;
+    justify-self: end; /* Alinea esta imagen a la derecha */
+
 }
 .imgDeporte img{
     width: 100%;

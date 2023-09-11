@@ -6,6 +6,16 @@ import nodos from '../../assets/DigitaNodos.png'
 import { testimonios } from '../../Data/data'
 import { TestimoniosCard } from '../TestimoniosCard/TestimoniosCard'
 
+
+import { Swiper, SwiperSlide } from 'swiper/react';
+
+// Import Swiper styles
+import 'swiper/css';
+import 'swiper/css/navigation';
+
+
+// import required modules
+import { Autoplay, Pagination, Navigation } from 'swiper/modules';
 export const Testimonios = () => {
     return (
         <section className={style.TestimoniosBox}>
@@ -29,11 +39,57 @@ export const Testimonios = () => {
                 <br />
                 <p className={style.testimoniosDownParrafo}>Escucha de primera mano las experiencias y opiniones de nuestros padres y estudiantes sobre su trayectoria en el Colegio San Agustín. Sus palabras son un reflejo de la calidad educativa, el ambiente acogedor y el impacto positivo que nuestra comunidad ha tenido en sus vidas.</p>
                 <div className={style.testimoniosDownCard}>
-                    {
+              
+                   {/*  {
                         testimonios.map((item,index) => (
                             <TestimoniosCard key={index} {...item} />
                         ))
-                    }
+                    } */}
+                      <Swiper
+                            className={style.carrusel}
+                            spaceBetween={10}
+                            slidesPerView={1}
+                            centeredSlides={true}
+                            autoplay={{
+                            delay: 1500,
+                            disableOnInteraction: false,
+                            }}
+                            pagination={{
+                            clickable: true,
+                            }}
+                            navigation={true}
+                            modules={[Autoplay, Navigation]}
+                            breakpoints={{
+                                '@0.00': {
+                                  slidesPerView: 1,
+                                  spaceBetween: 10,
+                                },
+                                '@0.75': {
+                                  slidesPerView: 2,
+                                  spaceBetween: 20,
+                                },
+                                '@1.00': {
+                                  slidesPerView: 3,
+                                  spaceBetween: 40,
+                                },
+                                '@1.50': {
+                                  slidesPerView: 4,
+                                  spaceBetween: 50,
+                                },
+                              }}
+                        >
+                        {
+                        testimonios.map((item,index) => (
+
+                            <SwiperSlide key={index}>
+                                <TestimoniosCard  {...item} />  
+                            </SwiperSlide>
+
+                        ))
+                        }
+                    
+                     </Swiper>
+                    
                 </div>
             </div>
         </section>

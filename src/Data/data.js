@@ -33,7 +33,7 @@ const testimonios = [
     },
     {
         nombre: 'Federico',
-        descripcion: '.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
         img: avatar2
     },
     {
