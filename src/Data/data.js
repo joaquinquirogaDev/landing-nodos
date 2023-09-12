@@ -40,7 +40,8 @@ const testimonios = [
         nombre: 'Rodrigo',
         descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
         img: avatar3
-    }
+    },
+  
 ]
 const dropsRedes = [
     {

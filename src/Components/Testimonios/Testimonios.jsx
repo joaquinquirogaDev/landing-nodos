@@ -12,10 +12,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-coverflow';
 
+import 'swiper/css/pagination';
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation,EffectCoverflow,Scrollbar } from 'swiper/modules';
 export const Testimonios = () => {
     return (
         <section className={style.TestimoniosBox}>
@@ -45,19 +47,22 @@ export const Testimonios = () => {
                             <TestimoniosCard key={index} {...item} />
                         ))
                     } */}
-                      <Swiper
+                     {/*  <Swiper
                             className={style.carrusel}
                             spaceBetween={10}
-                            slidesPerView={1}
+                            slidesPerView={'auto'}
                             centeredSlides={true}
                             autoplay={{
                             delay: 1500,
                             disableOnInteraction: false,
                             }}
+                            
+                            rewind={true}
                             pagination={{
                             clickable: true,
                             }}
                             navigation={true}
+                            loop={true}
                             modules={[Autoplay, Navigation]}
                             breakpoints={{
                                 '@0.00': {
@@ -88,7 +93,42 @@ export const Testimonios = () => {
                         ))
                         }
                     
-                     </Swiper>
+                     </Swiper> */}
+
+
+
+
+                    <Swiper
+                            grabCursor={true}
+                    
+                            spaceBetween={20}
+                            slidesPerView={3}
+                            /* autoplay={{
+                                delay: 1500,
+                                disableOnInteraction: false,
+                              }} */
+                            pagination={{clickable: true }}
+                            navigation={{
+                            
+                            clickable: true,
+                            }}
+                            scrollbar={{ draggable: true }}
+
+                            modules={[EffectCoverflow, Pagination, Navigation,Autoplay]}
+                            className={style.carrusel}
+                        >
+                            {
+                                testimonios.map((item,index) => (
+
+                                    <SwiperSlide key={index}>
+                                        <TestimoniosCard  {...item} />  
+                                    </SwiperSlide>
+
+                                ))
+                            }
+
+                        
+                        </Swiper>
                     
                 </div>
             </div>
