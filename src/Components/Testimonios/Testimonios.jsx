@@ -13,10 +13,12 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 // Import Swiper styles
 import 'swiper/css';
 import 'swiper/css/navigation';
+import 'swiper/css/effect-coverflow';
 
+import 'swiper/css/pagination';
 
 // import required modules
-import { Autoplay, Pagination, Navigation } from 'swiper/modules';
+import { Autoplay, Pagination, Navigation,EffectCoverflow,Scrollbar } from 'swiper/modules';
 export const Testimonios = () => {
 
   
