@@ -9,11 +9,13 @@ import avatar3 from '../assets/avatar3.png'
 const seccionesFooter = 3
 const nivel = [
     {
+        id: 1,
         titulo: 'Nivel Primario',
         img: nivelPrimario,
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
     {
+        id: 2,
         titulo: 'Nivel Inicial',
         img: nivelIncial,
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
@@ -40,7 +42,22 @@ const testimonios = [
         nombre: 'Rodrigo',
         descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
         img: avatar3
-    }
+    },
+    {
+        nombre: 'Rodrigo',
+        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        img: avatar3
+    },
+    {
+        nombre: 'Rodrigo',
+        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        img: avatar3
+    },
+    {
+        nombre: 'Rodrigo',
+        descripcion: 'Lorem ipsum dolor sit amet consectetur.Nuninquam tellus integer enim non at tellus sit fermentum.Nunc in quam tellus integer enim non at tellus sit fermentum.',
+        img: avatar3
+    },
 ]
 const dropsRedes = [
     {

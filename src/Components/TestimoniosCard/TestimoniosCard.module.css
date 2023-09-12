@@ -16,6 +16,9 @@
     overflow: hidden;
     text-overflow: ellipsis;
 }
+
+/* Sacale los comentarios cuando copies */
+
 .testimoniosItemContent {
     flex-grow: 1; 
 }

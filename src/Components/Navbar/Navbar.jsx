@@ -1,9 +1,11 @@
 //images 
 import logo from '../../assets/logoSanAgustin.png'
+import React from 'react'
+import { useNavigate } from 'react-router-dom'
 //styles
 import style from './Navbar.module.css'
-export const Navbar = ({ setActiveComponent }) => {
-
+export const Navbar = () => {
+    const navigate = useNavigate()
 
 
     return (
@@ -13,23 +15,23 @@ export const Navbar = ({ setActiveComponent }) => {
             </div>
             <div className={style.NavbarItem}>
                 <li
-                    onClick={() => setActiveComponent({nombre: 'Home'})}
+                    onClick={() => navigate('/')}
                 >
                     HOME
                 </li>
                 <li
-                    onClick={() => setActiveComponent({nombre: 'Niveles'})}
+                    onClick={() => navigate('/nivel')}
 
                 >
                     NIVELES
                 </li>
                 <li
-                    onClick={() => setActiveComponent({nombre: 'Novedades'})}
+                    onClick={() => navigate('/news')}
                 >
                     NOVEDADES
                 </li>
                 <li
-                    onClick={() => setActiveComponent({nombre: 'Contacto'})}
+                    onClick={() => navigate('/contact')}
                 >
                     CONTACTO
                 </li>

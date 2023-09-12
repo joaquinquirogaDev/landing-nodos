@@ -1,10 +1,13 @@
-export const SectionDetalle = (data) => {
-    const {activeComponent, setActiveComponent} = data
+import { useLocation, useNavigate } from "react-router-dom";
+
+export const SectionDetalle = () => {
+    const navigate = useNavigate()
+    const {titulo, subtitulo} = useLocation().state
     return <>
     
-    <h1>{activeComponent?.item?.titulo}</h1>
+    <h1>{titulo}</h1>
     <button 
-        onClick={() => setActiveComponent({nombre: 'Niveles'})}
+        onClick={() => navigate(-1)}
     >
         Atras
     </button>

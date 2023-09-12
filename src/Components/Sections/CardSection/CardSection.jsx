@@ -1,15 +1,16 @@
+import { useNavigate } from 'react-router-dom'
 import style from './CardSection.module.css'
 
 export default function CardSection(data) {
-    const {item, id, setActiveComponent} = data
+    const {item} = data
+    const navigate = useNavigate()
+    console.log(item);
     return <>
         <div className={style.Container}>
             <h1>{item.nombre}</h1>
             <p>{item.subtitulo}</p>
             <button
-            onClick={() => {
-                id === item?.id && setActiveComponent({nombre: 'Detalle', item: item})
-            }}
+            onClick={() => navigate(`/nivel/${item.id}`, {state: item})}
             >
                 Detalle
             </button>
