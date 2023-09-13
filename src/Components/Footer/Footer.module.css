@@ -10,7 +10,7 @@
     flex-wrap: wrap;
 
     color: var(--color-blueOscuro);
-    border-bottom: 1px var(--color-blueOscuro);
+    border-bottom: 1px solid var(--color-blueOscuro);
     padding: 20px;
 }
 
