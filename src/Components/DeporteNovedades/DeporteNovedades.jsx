@@ -6,7 +6,8 @@ export const DeporteNovedades = () => {
   return (
     <section className={style.boxDeportNovedades}>
         <div className={style.containerDeporteNovedades}>
-            <img className={style.imgNovedades} src={fondoDeporte} alt="deporte" />
+            <div style={{backgroundImage:`url(${fondoDeporte})`}} className={style.img}></div>
+            {/* <img  className={style.imgNovedades} src={fondoDeporte} alt="deporte" /> */}
 
             <div className={style.infoDeporte}>
                 <div className={style.textDeporte}>

@@ -29,9 +29,15 @@ export const HeroNovedades = () => {
                 modules={[Autoplay, Pagination, Navigation]}
                 className="mySwiper"
             >
-                <SwiperSlide><img className={style.imgHeroNovedades} src={img1} alt="" /></SwiperSlide>
-                <SwiperSlide><img className={style.imgHeroNovedades} src={img2} alt="" /></SwiperSlide>
-                <SwiperSlide><img className={style.imgHeroNovedades} src={img3} alt="" /></SwiperSlide>
+                <SwiperSlide>
+                  <div style={{backgroundImage:`url(${img1})`}} className={style.img}></div>
+                  </SwiperSlide>
+                <SwiperSlide>
+                  <div style={{backgroundImage:`url(${img2})`}} className={style.img}></div>
+                  </SwiperSlide>
+                <SwiperSlide>
+                  <div style={{backgroundImage:`url(${img3})`}} className={style.img}></div>
+                  </SwiperSlide>
                 
             </Swiper>
     </div>

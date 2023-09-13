@@ -1,22 +1,13 @@
+//styles
 import './App.css'
+//componentes
 import { Contacto, Footer, Hero, Navbar, Novedades, Sections } from './Components'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import {SectionDetalle} from './Components/Sections/CardSection/SectionDetalle.jsx'
-function App() {
-  // const initialState = {
-  //   nombre: 'Home',
-  //   item: {}
-  // }
-  // const [activeComponent, setActiveComponent] = useState(initialState);
-  // const componentes = {
-  //   Home: Hero,
-  //   Niveles: Sections,
-  //   Novedades: Novedades,
-  //   Contacto: Contacto,
-  //   Detalle: SectionDetalle
-  // };
 
-  // const CurrentComponent = componentes[activeComponent?.nombre]
+//react router dom
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+function App() {
+ 
   return <Router>
     <Navbar />
     <Routes>
@@ -33,7 +24,3 @@ function App() {
 export default App
 
 
-{/* <CurrentComponent
-  setActiveComponent={setActiveComponent}
-  activeComponent={activeComponent}
-/> */}

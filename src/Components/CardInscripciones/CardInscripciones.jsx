@@ -8,7 +8,9 @@ export const CardInscripciones = () => {
     return (
         <div className={style.cardInscripcionesBox}>
             <div className={style.cardInscripcionesContainer}>
-                <img className={style.fondo} src={fondo} alt="" />
+
+                <div style={{backgroundImage:`url(${fondo})`}} className={style.img}></div>
+                {/* <img className={style.fondo} src={fondo} alt="" /> */}
 
 
                 <div className={style.infoInscripcionesBox}>

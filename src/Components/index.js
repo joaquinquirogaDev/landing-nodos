@@ -7,6 +7,7 @@ export * from './Deporte/Deporte';
 export * from './DeporteNovedades/DeporteNovedades';
 export { default as Footer } from './Footer/Footer';
 export * from './Hero/Hero';
+export * from './HeroContacto/HeroContacto';
 export * from './HeroNovedades/HeroNovedades';
 export * from './Navbar/Navbar';
 export * from './NivelesLectivo/NivelesLectivo';
