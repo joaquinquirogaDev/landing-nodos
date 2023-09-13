@@ -9,8 +9,8 @@
     align-items: center;
     flex-wrap: wrap;
 
-    color: #212539;
-    border-bottom: 1px solid #212539;
+    color: var(--color-blueOscuro);
+    border-bottom: 1px var(--color-blueOscuro);
     padding: 20px;
 }
 
@@ -30,7 +30,7 @@
     display: flex;
     justify-content:space-between ;
     flex-wrap: wrap;
-    color: #212539;
+    color: var(--color-blueOscuro);
 
 }
 .footerDownTitle{

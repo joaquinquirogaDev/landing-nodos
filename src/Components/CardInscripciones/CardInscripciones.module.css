@@ -63,12 +63,12 @@
 
 .textMiddleItemTitle {
     font-size: 34px;
-    color: #212539;
+    color: var(--color-blueOscuro);
 }
 
 
 .textMiddleItemParrafo {
-    color: #212539;
+    color: var(--color-blueOscuro);
 
 }
 

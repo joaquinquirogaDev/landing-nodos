@@ -31,12 +31,12 @@
   .TestimoniosInfoTtile {
     font-size: 24px;
     font-weight: 800;
-    color: #212539;
+    color: var(--color-blueOscuro);
 }
 
 .parrafo {
     margin-top: 10px;
-    color: #212539;
+    color: var(--color-blueOscuro);
     font-weight: 700;
     line-height: 23px;
 
