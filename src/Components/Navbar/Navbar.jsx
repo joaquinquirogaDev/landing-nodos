@@ -11,7 +11,7 @@ export const Navbar = () => {
     return (
         <div className={style.NavbarContainer}>
             <div className={style.imgNavbar}>
-                <img src={logo} alt="" />
+                <img src={logo} alt=""  onClick={() => navigate('/')}/>
             </div>
             <div className={style.NavbarItem}>
                 <li
