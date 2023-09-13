@@ -1,11 +1,13 @@
 export * from './Button/Button';
 export * from './CardInscripciones/CardInscripciones';
 export * from './CardNivelLectivo/CardNivelLectivo';
+export * from './CargarCV/CargarCV';
 export * from './CartelHero/CartelHero';
 export * from './Contacto/Contacto';
 export * from './Deporte/Deporte';
 export * from './DeporteNovedades/DeporteNovedades';
 export { default as Footer } from './Footer/Footer';
+export * from './FormContacto/FormContacto';
 export * from './Hero/Hero';
 export * from './HeroContacto/HeroContacto';
 export * from './HeroNovedades/HeroNovedades';

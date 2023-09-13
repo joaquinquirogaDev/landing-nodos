@@ -35,6 +35,11 @@ export const Navbar = () => {
                 >
                     CONTACTO
                 </li>
+                <li
+                    onClick={() => navigate('/cargarCV')}
+                >
+                    CONTACTO
+                </li>
             </div>
         </div>
     )

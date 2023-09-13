@@ -1,11 +1,10 @@
 //styles
 import style from './HeroContacto.module.css'
-//images
-import heroContact from '../../assets/heroContacto.png'
-export const HeroContacto = () => {
+
+export const HeroContacto = ({img}) => {
   return (
     <section>
-        <div className={style.img}></div>
+        <div style={{backgroundImage: `url(${img})`}} className={style.img}></div>
     </section>
   )
 }

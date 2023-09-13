@@ -1,0 +1,58 @@
+.formContactoBox{
+    width: 100%;
+    padding: 40px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    gap: 32px;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.formInput input{
+    border-radius: 5px;
+    padding: 10px;
+    border: 1px solid var(--color-blueOscuro);
+    outline: none;
+}
+.inputGroup{
+    display: flex;
+    flex-direction: column;
+    gap: 3px;
+}
+.formInput button{
+    color: white;
+    border: none;
+    background-color: #A90504;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 20px;
+    width: 200px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+.formTitle{
+    color: var(--color-blueOscuro);
+    font-weight: 700;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+.InfoContacto{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.InfoContacto p{
+    font-size: 23px;
+}
+.infoTitle{
+    color: var(--color-blueOscuro);
+    font-size: 40px;
+}
+.errors{
+    color: #A82119;
+    margin: 0px;
+  }
