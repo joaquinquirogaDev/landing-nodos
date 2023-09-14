@@ -8,7 +8,6 @@
 }
 .containerDeporte{
     position: relative;
-    height: 350px;
 }
 .infoDeporte{
     width: 100%;
@@ -19,6 +18,7 @@
     display: grid;
     grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
     padding: 40px;
+    place-items: center;
 }
 .textDeporte{
     color: white;

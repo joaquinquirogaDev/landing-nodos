@@ -1,27 +1,4 @@
-/* .TarjetaContainer {
-    width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-}
 
-.TestimoniosInfoTtile {
-    font-weight: 800;
-    color: #212539;
-}
-
-.parrafo {
-    margin-top: 10px;
-    color: #212539;
-    font-weight: 500;
-    line-height: 23px;
-
-}
-
-.imgContainer{
-    max-width:30%;
-    height: auto;
-    display: block;
-} */
 .TarjetaContainer {
     display: grid;
     grid-template-columns: auto 1fr; 
@@ -42,7 +19,7 @@
 
 }
   .imgContainer img {
-    max-width: 60%; 
+    max-width: 70%; 
     height: auto; 
   }
   

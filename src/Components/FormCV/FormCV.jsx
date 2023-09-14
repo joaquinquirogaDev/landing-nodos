@@ -1,6 +1,6 @@
 //style 
-import { Controller, useForm } from 'react-hook-form';
 import style from './FormCV.module.css'
+import { Controller, useForm } from 'react-hook-form';
 export const FormCV = () => {
     const { register, handleSubmit, formState: { errors }, control } = useForm();
     const onSubmit = (data) => {

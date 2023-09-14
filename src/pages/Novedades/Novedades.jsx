@@ -1,9 +1,7 @@
 //componentes
-import { CartelHero } from "../CartelHero/CartelHero"
-import { DeporteNovedades } from "../DeporteNovedades/DeporteNovedades"
-import { HeroNovedades } from "../HeroNovedades/HeroNovedades"
-import { TarjetaNodos } from "../TarjetaNodos/TarjetaNodos"
-import { TarjetaProyectoESI } from "../TarjetaProyectoESI/TarjetaProyectoESI"
+
+import { CartelHero, DeporteNovedades, HeroNovedades, TarjetaNodos, TarjetaProyectoESI } from "../../Components"
+
 //images
 export const Novedades = () => {
     return <>
