@@ -1,0 +1,22 @@
+.NivelesInfoUp{
+    padding: 40px 50px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit ,minmax(450px ,1fr));
+    gap: 30px;
+    align-items: center;
+    color: var(--color-blueOscuro);
+}
+.NivelesInfoUp h2{
+   margin-bottom: 10px;
+}
+.NivelesInfoUp p{
+    margin-bottom: 10px;
+ }
+.imgNivelesInfoUp{
+    width: 70%;
+    justify-self: center;
+}
+.imgNivelesInfoUp img{
+    width: 100%;
+}

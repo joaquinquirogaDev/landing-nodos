@@ -50,8 +50,8 @@ export const Navbar = () => {
                     {
                         showOptions &&
                         <div  className={style.niveles}>
-                                <span  onClick={() => navigate('/nivelInicial')}>Nivel inicial</span>
-                                <span  onClick={() => navigate('/nivelPrimario')}>Nivel primario</span>
+                                <p  onClick={() => navigate('/nivelInicial')}>Nivel Inicial</p>
+                                <p  onClick={() => navigate('/nivelPrimario')}>Nivel Primario</p>
                         </div>
                     }
                         
@@ -69,7 +69,6 @@ export const Navbar = () => {
                     onMouseLeave={handleMouseLeaveContact}
                 >
                     <li
-                    onClick={() => navigate('/contact')}
                     className={style.navItem}
                     >
                         CONTACTO
@@ -77,7 +76,8 @@ export const Navbar = () => {
                     {
                         showOptionsContact &&
                         <div  className={style.contacto}>
-                                <span  onClick={() => navigate('/CargarCV')}>Cargar CV</span>
+                                <span  onClick={() => navigate('/contact')}>Comunicate</span>
+                                <p  onClick={() => navigate('/CargarCV')}>Forma parte del equipo</p>
                         </div>
                     }
                         

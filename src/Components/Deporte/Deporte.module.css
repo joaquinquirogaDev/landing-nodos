@@ -8,6 +8,7 @@
 }
 .containerDeporte{
     position: relative;
+    border-bottom: 5px solid var(--color-blueOscuro);
 }
 .infoDeporte{
     width: 100%;
@@ -38,7 +39,7 @@
 }
 .imgDeporte{
     width: 400px;
-    justify-self: end; /* Alinea esta imagen a la derecha */
+    justify-self: start;
 
 }
 .imgDeporte img{

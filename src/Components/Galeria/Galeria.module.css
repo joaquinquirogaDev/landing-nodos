@@ -1,0 +1,41 @@
+.galeriaContainer{
+    width: 100%;
+}
+.cartelContainer{
+    width: 100%;
+    padding: 40px 50px;
+    color: #FEFEFD;                             
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartel h1{
+    font-size: 3.9em;
+    font-weight: 800;
+
+}
+.cartel p{
+    font-weight: 800;
+}
+.cartelInfoRight{
+    width: 60%;
+}
+.cartelInfoRight h2{
+    margin-bottom: 10px;
+}
+.listColumns {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    row-gap: 2px;
+}
+.galeria{
+    width: 100%;
+    padding: 40px 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(330px, 1fr));
+    gap: 10px;
+}
+.galeria img{
+    max-width: 100%;
+    height: auto;
+}

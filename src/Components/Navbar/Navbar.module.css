@@ -47,14 +47,13 @@
     color: #1C57A7;
     display: flex;
     flex-direction: column;
-    padding: 15px;
+    padding: 12px;
     gap: 10px;
     position: absolute;
     z-index: 10000;
-    top: 18px; /* Ajusta la posición vertical según tu diseño */
-    width: 128px;
+    top: 18px; 
   }
-  .niveles span{
+  .niveles p{
     cursor: pointer;
   }
  
@@ -73,6 +72,6 @@
     top: 18px; 
     width: 128px;
   }
-  .contacto span{
+  .contacto p{
     cursor: pointer;
   }

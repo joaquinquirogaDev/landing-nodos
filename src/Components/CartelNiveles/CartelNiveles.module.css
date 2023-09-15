@@ -1,0 +1,36 @@
+.cartelNiveles{
+    padding: 40px 50px;
+    width: 100%;
+    color: #FEFEFD;                             
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.cartelNivelesLeft{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+
+}
+.cartelNivelesLeft h1{
+    font-size: 3.9em;
+    
+}
+
+.cartelNivelesLeft span{
+    font-size: 1.3em;
+    font-weight: 800;
+    
+}
+.cartelNivelesRight{
+    max-width: 650px;
+}
+.cartelNivelesRight p{
+    line-height: 30px;
+}
+@media (max-width: 768px) {
+    
+    .cartelNiveles {
+      flex-direction: column;
+    }
+  }

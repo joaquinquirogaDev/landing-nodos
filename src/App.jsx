@@ -2,7 +2,7 @@
 import './App.css'
 //componentes
 import {Footer, Hero, Navbar, Sections } from './Components'
-import {SectionDetalle} from './Components/Sections/CardSection/SectionDetalle.jsx'
+import SectionDetalle from './Components/Sections/CardSection/SectionDetalle';
 
 //react router dom
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
