@@ -1,0 +1,15 @@
+.img{
+    width: 100%;
+    height: calc(100vh - 93px);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    
+}
+.heroContainerNovedades{
+    width: 100%;
+
+}
+.imgHeroNovedades{
+    width: 100%;
+}

@@ -1,0 +1,99 @@
+.img{
+    width: 100%;
+    height: 700px;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.containerDeporteNovedades{
+    position: relative;
+    height: 700px;
+    width: 100%;
+}
+
+.imgNovedades{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+.infoDeporte{
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 40px 50px;
+   /*  display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(450px,1fr));
+    padding: 40px; */
+}
+.textDeporte{
+    color: white;
+    
+}
+.textDeporte h1{
+    font-weight: 800;
+    font-size: 24px;
+    margin-top: 14px;
+    margin-bottom: 14px;
+}
+.textDeporte p{
+    line-height: 23px;
+    font-weight: 500;
+}
+.imgDeporte{
+    width: 400px;
+    justify-self: end; /* Alinea esta imagen a la derecha */
+
+}
+.imgDeporte img{
+    width: 100%;
+}
+.DeporteNovedadesCard{
+    margin-top: 20px;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
+    gap: 20px;
+}
+.cardItemNovedades{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px;
+    background-color: #FEFEFD80;
+    border: 5px solid var(--color-blueOscuro);
+}
+.cardItemInfo{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 3px;
+    color: var(--color-blueOscuro);
+
+}
+.cardItemInfo h1{
+    font-weight: 800;
+}
+.ButtonNovedades{
+    color: white;
+    border: none;
+    background-color: var(--color-blueOscuro);
+    padding: 5px 20px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+.ButtonDiciplinas{
+    margin-top: 20px;
+    background-color: var(--color-blueOscuro); 
+    color: white;
+    border: none;
+    font-weight: 800;
+    width: 100%;
+    font-size: 2em;
+    padding: 20px 50px;
+}

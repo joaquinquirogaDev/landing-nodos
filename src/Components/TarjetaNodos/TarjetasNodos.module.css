@@ -1,0 +1,27 @@
+.TestimonioUp {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+}
+
+.TestimoniosLeftTtile {
+    font-weight: 800;
+    color: var(--color-blueOscuro);
+    font-size: 24px;
+}
+
+.parrafo {
+    margin-top: 10px;
+    color: var(--color-blueOscuro);
+    font-weight: 700;
+    line-height: 23px;
+
+}
+
+.imgNodos img {
+    max-width: 70%;
+    height: auto;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}

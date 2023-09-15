@@ -8,7 +8,7 @@ export const Deporte = () => {
   return (
     <section className={style.boxDeporte}>
         <div className={style.containerDeporte}>
-            <img className={style.imgFondoDeporte} src={fondoDeporte} alt="deporte" />
+            <div style={{backgroundImage:`url(${fondoDeporte})`}} className={style.img}></div>
 
             <div className={style.infoDeporte}>
                 <div className={style.textDeporte}>

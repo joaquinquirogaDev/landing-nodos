@@ -1,23 +1,15 @@
-import React from 'react';
+//styles
 import './App.css'
-import { Contacto, Footer, Hero, Navbar, Novedades, Sections } from './Components'
-import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import SectionDetalle from './Components/Sections/CardSection/SectionDetalle.jsx'
-function App() {
-  // const initialState = {
-  //   nombre: 'Home',
-  //   item: {}
-  // }
-  // const [activeComponent, setActiveComponent] = useState(initialState);
-  // const componentes = {
-  //   Home: Hero,
-  //   Niveles: Sections,
-  //   Novedades: Novedades,
-  //   Contacto: Contacto,
-  //   Detalle: SectionDetalle
-  // };
+//componentes
+import {Footer, Hero, Navbar, Sections } from './Components'
+import {SectionDetalle} from './Components/Sections/CardSection/SectionDetalle.jsx'
 
-  // const CurrentComponent = componentes[activeComponent?.nombre]
+//react router dom
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+//pages
+import { Contacto, NivelInicial, NivelPrimario, Novedades,CargarCV } from './pages';
+function App() {
+ 
   return <Router>
     <Navbar />
     <Routes>
@@ -26,6 +18,9 @@ function App() {
       <Route path='/nivel' element={<Sections />} />
       <Route path='/nivel/:id' element={<SectionDetalle />} />
       <Route path='/contact' element={<Contacto />} />
+      <Route path='/cargarCV' element={<CargarCV />} />
+      <Route path='/nivelPrimario' element={<NivelPrimario />} />
+      <Route path='/nivelInicial' element={<NivelInicial />} />
     </Routes>
     <Footer />
   </Router>
@@ -34,7 +29,3 @@ function App() {
 export default App
 
 
-{/* <CurrentComponent
-  setActiveComponent={setActiveComponent}
-  activeComponent={activeComponent}
-/> */}

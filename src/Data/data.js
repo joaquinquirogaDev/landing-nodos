@@ -6,6 +6,10 @@ import avatar from '../assets/avatar.png'
 import avatar1 from '../assets/avatar1.png'
 import avatar2 from '../assets/avatar2.png'
 import avatar3 from '../assets/avatar3.png'
+//imagenes deporte
+import pelota from '../assets/deporte/pelota.png'
+import basquet from '../assets/deporte/basquet.png'
+import voley from '../assets/deporte/voley.png'
 const seccionesFooter = 3
 const nivel = [
     {
@@ -59,6 +63,33 @@ const testimonios = [
         img: avatar3
     },
 ]
+const deporte = [
+    {
+        titulo: 'Futbol mixto',
+        img: pelota,
+        categorias:'2014 / 2015 / 2016 2012 /2013',
+        dias:'Lunes y Viernes'
+    },
+    {
+        titulo: 'Futbol mixto',
+        img: pelota,
+        categorias:'2014 / 2015 / 2016',
+        dias:'Lunes y Viernes'
+    },
+    {
+        titulo: 'Básquet mixto',
+        img: basquet,
+        categorias:'2009 a 2016',
+        dias:'Martes y Jueves'
+    },
+    {
+        titulo: 'Vóley mixto',
+        img: voley,
+        categorias:'2009 a 2016',
+        dias:'Lunes y Miércoles'
+    },
+    
+]
 const dropsRedes = [
     {
         nombre: 'Instagram'
@@ -104,5 +135,5 @@ const Secciones = {
 }
 
 
-export { nivel, dropsRedes, seccionesFooter, Secciones, testimonios }
+export { nivel, dropsRedes, seccionesFooter, Secciones, testimonios ,deporte}
 

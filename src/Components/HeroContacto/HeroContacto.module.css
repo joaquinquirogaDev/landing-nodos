@@ -1,0 +1,8 @@
+.img{
+    width: 100%;
+    background-image: url(../../assets/heroContacto.png);
+    height: calc(100vh - 93px);
+    background-position:  center center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}

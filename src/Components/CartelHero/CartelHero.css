@@ -1,0 +1,16 @@
+.cartelHeroContainer{
+    padding: 40px 50px;
+    width: 100%;
+}
+.cartelHeroContainer h1{
+    font-size: 39px;
+    color: white;
+    font-weight: 800;
+
+    margin-bottom: 10px;
+}
+.cartelHeroContainer p{
+    color: white;
+    font-weight: 700;
+    font-size: 20px;
+}

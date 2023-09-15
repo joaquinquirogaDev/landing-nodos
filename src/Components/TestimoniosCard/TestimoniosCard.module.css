@@ -1,6 +1,6 @@
 .testimoniosItem{
     padding: 40px;
-    border: 5px solid #212539;
+    border: 5px solid var(--color-blueOscuro);
     border-radius: 5px;
     display: flex;
     flex-direction: column;   
@@ -11,7 +11,7 @@
 .testimoniosItemDescripcion{
     line-height: 25px;
     font-weight: 700;
-    color: #212539;
+    color: var(--color-blueOscuro);
     max-height: 150px; /* Establece una altura máxima para la descripción */
     overflow: hidden;
     text-overflow: ellipsis;
@@ -34,7 +34,7 @@
 .testimoniosItemButton{
     width: 100%;
     color: white;
-    background-color: #212539;
+    background-color: var(--color-blueOscuro);
     border: none;
     padding: 7px 25px;
     border-radius: 5px;
