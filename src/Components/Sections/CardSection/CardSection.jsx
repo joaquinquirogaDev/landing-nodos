@@ -1,8 +1,7 @@
 import { useNavigate } from 'react-router-dom'
 import style from './CardSection.module.css'
 
-export default function CardSection(data) {
-    const {item} = data
+export default function CardSection(item) {
     const navigate = useNavigate()
     console.log(item);
     return <>

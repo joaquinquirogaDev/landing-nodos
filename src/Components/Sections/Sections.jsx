@@ -1,14 +1,13 @@
 import { nivel } from "../../Data/data"
 import CardSection from "./CardSection/CardSection"
 import style from './GlobalSection.module.css'
-export default function Sections(data) {
+export default function Sections() {
     // for (let i = 0; i < 0 + number; i++) {
     //     data[i] && repeatedData.push(data[i]);
     // }
-    const {setActiveComponent} = data
     return <div className={style.Container}>
         {nivel.map((item, key) => (
-            <CardSection key={key} item={item} id={item?.id} setActiveComponent={setActiveComponent}/>
+            <CardSection key={key} item={item} id={item?.id} />
         ))}
     </div>
 }

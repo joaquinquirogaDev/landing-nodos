@@ -1,13 +1,10 @@
 //images 
 import logo from '../../assets/logoSanAgustin.png'
-import React from 'react'
 import { useNavigate } from 'react-router-dom'
 //styles
 import style from './Navbar.module.css'
 export const Navbar = () => {
     const navigate = useNavigate()
-
-
     return (
         <div className={style.NavbarContainer}>
             <div className={style.imgNavbar}>

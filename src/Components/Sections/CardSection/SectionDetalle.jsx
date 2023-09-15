@@ -1,6 +1,6 @@
 import { useLocation, useNavigate } from "react-router-dom";
 
-export const SectionDetalle = () => {
+export default function SectionDetalle(){
     const navigate = useNavigate()
     const {titulo, subtitulo} = useLocation().state
     return <>

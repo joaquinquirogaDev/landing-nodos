@@ -1,7 +1,8 @@
+import React from 'react';
 import './App.css'
 import { Contacto, Footer, Hero, Navbar, Novedades, Sections } from './Components'
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import {SectionDetalle} from './Components/Sections/CardSection/SectionDetalle.jsx'
+import SectionDetalle from './Components/Sections/CardSection/SectionDetalle.jsx'
 function App() {
   // const initialState = {
   //   nombre: 'Home',
