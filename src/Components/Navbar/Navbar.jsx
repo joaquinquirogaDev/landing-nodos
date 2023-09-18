@@ -41,7 +41,7 @@ export const Navbar = () => {
                     onMouseLeave={handleMouseLeave}
                 >
                     <li
-                         onClick={() => navigate('/nivel')}
+                       
                         className={style.navItem}
 
                     >
@@ -76,7 +76,7 @@ export const Navbar = () => {
                     {
                         showOptionsContact &&
                         <div  className={style.contacto}>
-                                <span  onClick={() => navigate('/contact')}>Comunicate</span>
+                                <p  onClick={() => navigate('/contact')}>Comunicate</p>
                                 <p  onClick={() => navigate('/CargarCV')}>Forma parte del equipo</p>
                         </div>
                     }

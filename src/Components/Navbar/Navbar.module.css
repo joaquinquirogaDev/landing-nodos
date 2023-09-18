@@ -1,8 +1,8 @@
 .NavbarContainer {
     display: flex;
-    align-items: center;
+    align-items: flex-end;
     justify-content: space-between;
-    padding: 10px 50px;
+    padding: 10px 80px;
     background-color: var(--color-yellow);
     height: 84px;
 }
@@ -52,6 +52,7 @@
     position: absolute;
     z-index: 10000;
     top: 18px; 
+    width: 128px;
   }
   .niveles p{
     cursor: pointer;
@@ -64,13 +65,15 @@
   .contacto{
     background-color: #FEFEFD;
     color: #1C57A7;
+    display: flex;
     flex-direction: column;
     padding: 15px;
     gap: 10px;
     position: absolute;
     z-index: 10000;
     top: 18px; 
-    width: 128px;
+    left: -40px;
+    width: 200px;
   }
   .contacto p{
     cursor: pointer;

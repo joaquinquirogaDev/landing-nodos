@@ -1,9 +1,9 @@
 .formContactoBox{
     width: 100%;
     padding: 40px 50px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(400px,1fr));
+    display: flex;
     gap: 32px;
+    flex-wrap: wrap;
 }
 
 .formInput{
@@ -44,6 +44,8 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+    width: 40%;     
+    padding: 20px;
 }
 .InfoContacto p{
     font-size: 23px;
@@ -56,3 +58,35 @@
     color: #A82119;
     margin: 0px;
   }
+  @media (max-width: 768px) {
+        .formContactoBox{
+            padding: 40px 20px;
+        }
+        .formInput {
+            align-items: center;
+        }
+        
+        .inputGroup {
+            width: 100%;
+            max-width: 300px; 
+            margin-left: auto;
+            margin-right: auto;
+        }
+        
+        .errors {
+            font-size: 12px;
+        }
+        .InfoContacto {
+            width: 100%; 
+            padding: 10px; 
+        }
+        
+        .infoTitle {
+            font-size: 18px; 
+        }
+        
+        .InfoContacto p {
+            font-size: 14px; 
+        }
+    }
+    

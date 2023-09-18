@@ -1,5 +1,6 @@
 //styles
 import './App.css'
+import logoWhatsapp from './assets/whatsapp.png'
 //componentes
 import {Footer, Hero, Navbar, Sections } from './Components'
 import SectionDetalle from './Components/Sections/CardSection/SectionDetalle';
@@ -11,12 +12,14 @@ import { Contacto, NivelInicial, NivelPrimario, Novedades,CargarCV } from './pag
 function App() {
  
   return <Router>
+    <div className="containerWsp">
+      <img src={logoWhatsapp} alt="" />
+
+    </div>
     <Navbar />
     <Routes>
       <Route path='/' element={<Hero />} />
       <Route path='/news' element={<Novedades />} />
-      <Route path='/nivel' element={<Sections />} />
-      <Route path='/nivel/:id' element={<SectionDetalle />} />
       <Route path='/contact' element={<Contacto />} />
       <Route path='/cargarCV' element={<CargarCV />} />
       <Route path='/nivelPrimario' element={<NivelPrimario />} />

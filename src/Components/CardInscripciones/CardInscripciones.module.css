@@ -80,3 +80,17 @@
 .textRight img {
     width: 100%;
 }
+@media (max-width: 768px) {
+    
+    .img {
+      height: 600px;
+    }
+    .infoInscripcionesContainer {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        flex-direction: column;
+    }
+    
+  }

@@ -1,6 +1,8 @@
 // const number = 2
 import nivelPrimario from '../assets/NivelPrimario.png'
 import nivelIncial from '../assets/NivelInicial.png'
+import imgModalnivelIncial from '../assets/imgModalInicial.png'
+import imgModalnivelPrimario from '../assets/imgModalPrimario.png'
 //images avatar
 import avatar from '../assets/avatar.png'
 import avatar1 from '../assets/avatar1.png'
@@ -14,14 +16,16 @@ const seccionesFooter = 3
 const nivel = [
     {
         id: 1,
-        titulo: 'Nivel Primario',
+        titulo: 'Nivel Primario - Ciclo Lectivo',
         img: nivelPrimario,
+        imgModal: imgModalnivelPrimario,
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
     {
         id: 2,
-        titulo: 'Nivel Inicial',
+        titulo: 'Nivel Inicial - Ciclo Lectivo',
         img: nivelIncial,
+        imgModal: imgModalnivelIncial,
         subtitulo: 'Lorem ipsum dolor sit amet consectetur adipisicing elit. Rem nemo tempore labor. Sequi, praesentium eaque voluptatibus repudiandae officiis tempora unde dolorem atque, iure facilis,harum vero eius libero quis a'
     },
 

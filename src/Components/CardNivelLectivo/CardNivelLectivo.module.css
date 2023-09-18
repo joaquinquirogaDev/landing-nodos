@@ -23,6 +23,15 @@
     border-radius: 5px;
     border: none;
     width: 40%;
-    padding: 8px;
+    padding: 10px;
     cursor: pointer;
+}
+
+
+.imgContainerModal{
+    width: 100%;
+}
+.imgContainerModal img{
+    width: 100%;
+    object-fit: cover;
 }

@@ -1,6 +1,7 @@
 export * from './Button/Button';
 export * from './CardInscripciones/CardInscripciones';
 export * from './CardNivelLectivo/CardNivelLectivo';
+export * from './CardNivelesInscripcion/CardNivelesInscripcion';
 export * from './CartelHero/CartelHero';
 export * from './CartelNiveles/CartelNiveles';
 export * from './Deporte/Deporte';
@@ -12,6 +13,7 @@ export * from './Galeria/Galeria';
 export * from './Hero/Hero';
 export * from './HeroContacto/HeroContacto';
 export * from './HeroNovedades/HeroNovedades';
+export * from './Modal/Modal';
 export * from './Navbar/Navbar';
 export * from './NivelesInfo/NivelesInfo';
 export * from './NivelesInfoDown/NivelesInfoDown';
