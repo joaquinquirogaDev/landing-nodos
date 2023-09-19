@@ -11,7 +11,9 @@
     color: var(--color-blueOscuro);
     margin-bottom: 10px;
 }
-
+.tarjetaInglesLeft{
+  width: 80%;
+}
 .tarjetaInglesLeft p {
     margin-top: 10px;
     color: var(--color-blueOscuro);
@@ -36,5 +38,8 @@
     .imgContainer img {
       width: 200px;
       height: auto; 
+    }
+    .tarjetaInglesLeft{
+      width: 100%;
     }
   }

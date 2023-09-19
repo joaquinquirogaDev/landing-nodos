@@ -11,7 +11,9 @@
     font-weight: 800;
     color: var(--color-blueOscuro);
 }
-
+.TarjetaInfo{
+  width: 80%;
+}
 .parrafo {
     margin-top: 10px;
     color: var(--color-blueOscuro);
@@ -20,7 +22,7 @@
 
 }
   .imgContainer{
-    width: 70%; 
+    width: 20%; 
 
   }
   .imgContainer img {
@@ -36,6 +38,13 @@
     .TestimoniosInfoTtile {
       font-size: 20px;
       
+  }
+  .TarjetaInfo{
+    width: 100%;
+  }
+  .imgContainer{
+    width: 80%; 
+
   }
   }
   
