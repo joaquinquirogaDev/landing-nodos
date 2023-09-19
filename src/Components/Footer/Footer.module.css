@@ -1,6 +1,6 @@
 .Container{
     background-color: var(--color-yellow);
-    padding: 20px;
+    padding: 20px 20px;
 }
 .containerFooter{
     width: 100%;
@@ -8,7 +8,7 @@
     justify-content:space-between ;
     align-items: center;
     flex-wrap: wrap;
-
+    gap: 20px;
     color: var(--color-blueOscuro);
     border-bottom: 1px solid var(--color-blueOscuro);
     padding: 20px;

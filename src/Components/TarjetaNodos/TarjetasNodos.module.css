@@ -1,9 +1,11 @@
 .TestimonioUp {
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    display: flex;
+    align-items: center;
 }
-
+.TestimoniosLeft{
+    width: 60%;
+}
 .TestimoniosLeftTtile {
     font-weight: 800;
     color: var(--color-blueOscuro);
@@ -20,7 +22,7 @@
 }
 
 .imgNodos img {
-    max-width: 70%;
+    max-width: 80%;
     height: auto;
     display: block;
     margin-left: auto;
@@ -50,10 +52,16 @@
 }
 @media (max-width: 768px) {
     .TestimonioUp {
-       row-gap: 20px;
+       flex-direction: column;
+       gap: 20px;
     }
-    .imgNodos img {
-        max-width: 80%;
-        
+ 
+    .TestimoniosLeft{
+        width: 100%;
     }
+    .TestimoniosLeftTtile {
+        font-size: 20px;
+    }
+    
+    
   }

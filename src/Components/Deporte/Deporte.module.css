@@ -113,7 +113,7 @@
     
     .img {
       
-        height: 560px;
+        height: 600px;
     }
     .infoDeporte{
         flex-direction: column;
@@ -123,5 +123,15 @@
     .imgDeporte{
         width: 240px;
 
+    }
+    .textDeporte h1{
+        font-weight: 800;
+        font-size: 20px;
+        margin-top: 14px;
+        margin-bottom: 14px;
+    }
+    .textDeporte p{
+        line-height: 18px;
+        font-weight: 700;
     }
   }

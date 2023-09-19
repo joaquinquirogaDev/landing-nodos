@@ -9,7 +9,7 @@
     
 }
 .testimoniosDownTitle{
-    font-size: 28px;
+    font-size: 24px;
     font-weight: 800;
 }
 .testimoniosDownParrafo{
@@ -76,5 +76,8 @@
     .TestimoniosBox {
         padding: 20px 20px;
         background-color: #FEFEFD;
+    }
+    .testimoniosDownTitle{
+        font-size: 20px;
     }
   }
