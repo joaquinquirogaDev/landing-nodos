@@ -1,10 +1,13 @@
 .NivelesInfoDown{
     padding: 40px 50px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax(450px ,1fr));
-    align-items: center;
+    display: flex;
+    gap: 30px;
     color: var(--color-blueOscuro);
+    flex-wrap: wrap;
+}
+.NivelesInfoLeft{
+    width: 60%;
 }
 .NivelesInfoDown h2{
    margin-bottom: 10px;
@@ -13,8 +16,20 @@
     margin-bottom: 10px;
  }
 .imgNivelesInfoUp{
-    width: 70%;
+    width: 30%;
 }
 .imgNivelesInfoUp img{
     width: 100%;
 }
+@media (max-width: 768px) {
+  .NivelesInfoDown{
+    padding: 20px 20px;
+    flex-direction: column-reverse;
+  }
+  .imgNivelesInfoUp{
+    width: 80%;
+    }
+    .NivelesInfoLeft{
+        width: 90%;
+    }
+  }

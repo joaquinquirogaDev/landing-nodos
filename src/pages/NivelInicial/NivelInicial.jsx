@@ -65,7 +65,7 @@ export const NivelInicial = () => {
           list={['Música','  Educación física' ,'Inglés','Artes visuales','Expresión corporal ']}
           imagenes={[img1Inicial,img2Inicial,img3Inicial,img4Inicial,img5Inicial,img6Inicial]}
         />
-        <div style={{padding:'40px 50px'}}>
+        <div className='classPaddingTarjetas'>
 
         <TarjetaProyectoESI  
           parrafo='Educación sexual integral, que se trabaja en nivel inicial abarcando en el conocimiento del cuerpo y sus cuidados. en la alimentación, higiene, intimidad y salud pensando de manera integral.'

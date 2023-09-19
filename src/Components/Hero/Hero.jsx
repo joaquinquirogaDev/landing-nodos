@@ -34,8 +34,8 @@ export const Hero = () => {
                         }}
                         loop={true}
                         
-                        navigation={true}
-                        modules={[Autoplay, Pagination, Navigation]}
+                        
+                        modules={[Autoplay, Pagination]}
                         className="mySwiper"
                     >
                         <SwiperSlide>
@@ -54,17 +54,6 @@ export const Hero = () => {
                     </Swiper>
 
                 <div className={style.heroCard}>
-                    {/* <div className={style.heroInfo}>
-                        <img src={logo} alt="Colegio San Agustín" />
-
-                        <div className={style.heroRight}>
-                            <p className={style.textBue}>COLEGIO</p>
-
-                            <h2 className={style.textBueTitulo}>San Agustín</h2>
-
-                            <p className={style.textRed}>EDUCACIÓN INICIAL Y PRIMARIA</p>
-                        </div>
-                    </div> */}
                     <img className={style.heroCardImg} src={bienvenida} alt="Colegio San Agustin" />
                 </div>
             </div>

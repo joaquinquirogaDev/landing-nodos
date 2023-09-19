@@ -62,12 +62,14 @@
     gap: 20px;
 }
 .cardItemNovedades{
+    margin-top: 20px;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    padding: 30px;
+    padding: 20px;
     background-color: #FEFEFD80;
+    max-width: 300px;
     border: 5px solid var(--color-blueOscuro);
 }
 .cardItemInfo{
@@ -80,6 +82,7 @@
 }
 .cardItemInfo h1{
     font-weight: 800;
+    text-align: center;
 }
 .ButtonNovedades{
     color: white;
@@ -101,3 +104,27 @@
     font-size: 2em;
     padding: 20px 50px;
 }
+@media (max-width: 768px) {
+    .ButtonDiciplinas{
+        margin-top: 20px;
+        background-color: var(--color-blueOscuro); 
+        color: white;
+        border: none;
+        font-weight: 800;
+        width: 100%;
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+    .infoDeporte{
+        padding: 20px 20px;
+    }
+    .containerDeporteNovedades{
+        position: relative;
+        height: 900px;
+        width: 100%;
+
+        }
+        .img{
+            height: 100%;
+        }
+  }

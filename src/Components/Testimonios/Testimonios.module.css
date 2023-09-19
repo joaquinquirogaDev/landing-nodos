@@ -45,3 +45,36 @@
     width: 300px !important;
     margin-right: 20px;
 }
+/*MODALES*/
+.modalBox{
+    width: 100%;
+    padding: 20px;
+    color: var(--color-blueOscuro);
+}
+.containerBox{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.info{
+    width: 70%;
+}
+.info p{
+    margin-top: 10px;
+    color: var(--color-blueOscuro);
+    line-height: 18px;
+}
+.imgModal{
+    width: 18%;
+}
+.imgModal img{
+    width: 100%;
+    object-fit: cover;
+}
+@media (max-width: 768px) {
+    
+    .TestimoniosBox {
+        padding: 20px 20px;
+        background-color: #FEFEFD;
+    }
+  }

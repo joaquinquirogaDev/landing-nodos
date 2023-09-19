@@ -1,7 +1,7 @@
 .TestimonioUp {
     width: 100%;
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 }
 
 .TestimoniosLeftTtile {
@@ -48,3 +48,12 @@
     width: 100%;
     object-fit: cover;
 }
+@media (max-width: 768px) {
+    .TestimonioUp {
+       row-gap: 20px;
+    }
+    .imgNodos img {
+        max-width: 80%;
+        
+    }
+  }

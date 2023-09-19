@@ -9,7 +9,6 @@ export const CardNivelesInscripcion = ({nivel,parrafo }) => {
             <div className={style.cardInscripcionesContainer}>
 
                 <div style={{backgroundImage:`url(${fondo})`}} className={style.img}></div>
-                {/* <img className={style.fondo} src={fondo} alt="" /> */}
 
 
                 <div className={style.infoInscripcionesBox}>

@@ -1,7 +1,7 @@
 
 .tarjetaIngles {
-    display: grid;
-    grid-template-columns: auto 1fr; 
+    width: 100%;
+    display: flex;
     gap: 20px; 
     align-items: center; 
   }
@@ -31,6 +31,10 @@
   @media (max-width: 768px) {
     
     .tarjetaIngles {
-      grid-template-columns: 1fr;
+      flex-direction: column;
+    }
+    .imgContainer img {
+      width: 200px;
+      height: auto; 
     }
   }

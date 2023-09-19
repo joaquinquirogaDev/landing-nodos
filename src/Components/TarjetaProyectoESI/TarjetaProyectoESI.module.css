@@ -1,7 +1,7 @@
 
 .TarjetaContainer {
-    display: grid;
-    grid-template-columns: auto 1fr; 
+    width: 100%;
+    display: flex;
     gap: 20px; 
     align-items: center; 
     color: var(--color-blueOscuro);
@@ -19,16 +19,24 @@
     line-height: 23px;
 
 }
+  .imgContainer{
+    width: 70%; 
+
+  }
   .imgContainer img {
-    max-width: 70%; 
+    width: 100%;
     height: auto; 
   }
   
   @media (max-width: 768px) {
     
     .TarjetaContainer {
-      grid-template-columns: 1fr;
+      flex-direction: column-reverse;
     }
+    .TestimoniosInfoTtile {
+      font-size: 20px;
+      
+  }
   }
   
   

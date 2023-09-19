@@ -21,3 +21,15 @@
     z-index: 99999;
   
 }
+.classPaddingTarjetas{
+  padding: 40px 50px;
+}
+@media (max-width: 768px) {
+  .classPaddingTarjetas{
+    padding: 20px 20px;
+  }
+  .containerWsp img{
+    width: 60px;
+    
+  }
+}

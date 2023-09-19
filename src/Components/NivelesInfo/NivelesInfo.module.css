@@ -1,11 +1,12 @@
 .NivelesInfoUp{
     padding: 40px 50px;
     width: 100%;
-    display: grid;
-    grid-template-columns: repeat(auto-fit ,minmax(450px ,1fr));
+    display: flex;
     gap: 30px;
-    align-items: center;
     color: var(--color-blueOscuro);
+}
+.NivelesInfoLeft{
+    width: 60%;
 }
 .NivelesInfoUp h2{
    margin-bottom: 10px;
@@ -14,9 +15,21 @@
     margin-bottom: 10px;
  }
 .imgNivelesInfoUp{
-    width: 70%;
-    justify-self: center;
+    width: 30%;
 }
 .imgNivelesInfoUp img{
     width: 100%;
 }
+@media (max-width: 768px) {
+    .NivelesInfoUp{
+    padding: 20px 20px;
+
+        flex-direction: column;
+    }
+    .imgNivelesInfoUp{
+        width: 80%;
+    }
+    .NivelesInfoLeft{
+        width: 90%;
+    }
+  }

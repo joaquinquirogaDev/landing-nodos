@@ -25,8 +25,7 @@ export const HeroNovedades = () => {
                 }}
                 loop={true}
                 
-                navigation={true}
-                modules={[Autoplay, Pagination, Navigation]}
+                modules={[Autoplay, Pagination]}
                 className="mySwiper"
             >
                 <SwiperSlide>

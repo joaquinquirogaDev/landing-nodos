@@ -1,6 +1,6 @@
 .NavbarContainer {
     display: flex;
-    align-items: flex-end;
+    align-items: center;
     justify-content: space-between;
     padding: 10px 80px;
     background-color: var(--color-yellow);
@@ -9,12 +9,19 @@
 
 
 
-.NavbarContainer img {
+.NavbarContainer .logoSanAgustin {
     width: 65px;
     object-fit: cover;
     cursor: pointer;
+    border: 1px solid white;
 }
-
+.menu{
+  display: none;
+}
+.imgMenu{
+  width: 30px;
+  cursor: pointer;
+}
 .NavbarItem {
     display: flex;
     gap: 43px;
@@ -78,3 +85,99 @@
   .contacto p{
     cursor: pointer;
   }
+  .menuNone{
+    display: none !important;
+  }
+  @media (max-width: 768px) {
+    
+    .NavbarItem {
+      display: none;
+    }
+
+    .menu{
+      display: block;
+    }
+    .NavbarContainer {
+      padding: 10px 30px;
+    }
+    .NavbarContainer .logoSanAgustin {
+      width: 45px;
+      object-fit: cover;
+      cursor: pointer;
+      border: 1px solid white;
+    }
+    
+  }
+@media (max-width: 767px) {
+  .NavbarItemContainer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    background-color: var(--color-yellow); 
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    justify-content: center; 
+    z-index: 999999;
+    height: 0; 
+    overflow: hidden; 
+    transition: height 1s ease-in;
+  }
+  .closeButon{
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+  }
+   .NavbarItemContainer {
+    height: 100%;
+  }
+   .NavbarItemContainer li {
+    padding: 20px 0;
+    text-align: center;
+    width: 100%; 
+    list-style: none;
+    color: #1C57A7;
+
+  }
+
+   .NavbarItemContainer li:last-child {
+    border-bottom: none;
+  }
+
+   .nivelContainer,
+   .contactoContainer {
+    position: relative;
+  }
+
+   .nivelContainer:hover .niveles,
+   .contactoContainer:hover .contacto {
+    display: block;
+  }
+
+   .niveles,
+   .contacto {
+    display: none;
+    position: absolute;
+    top: 50px;
+    left: -40px;
+    background-color: #FEFEFD; 
+    width: 200px; 
+    padding: 10px 0;
+  }
+
+   .niveles p,
+   .contacto p {
+    padding: 10px 20px;
+    text-align: center;
+    border-bottom: 1px solid white; 
+  }
+
+   .niveles p:last-child,
+   .contacto p:last-child {
+    border-bottom: none; 
+  }
+}
+

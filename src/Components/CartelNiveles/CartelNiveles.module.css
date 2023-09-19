@@ -32,5 +32,7 @@
     
     .cartelNiveles {
       flex-direction: column;
+    padding: 20px 20px;
+
     }
   }

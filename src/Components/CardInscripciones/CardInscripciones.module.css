@@ -83,7 +83,7 @@
 @media (max-width: 768px) {
     
     .img {
-      height: 600px;
+      height: 700px;
     }
     .infoInscripcionesContainer {
         width: 100%;
@@ -91,6 +91,31 @@
         align-items: center;
         gap: 20px;
         flex-direction: column;
+        padding: 20px 20px;
+    }
+    .textRight {
+        width: 43%;
+    
+    }
+    .textLeft{
+        width: 100%;
     }
     
+.textLeftParrafo {
+    font-size: 25px;
+}
+
+.textLeftSpan {
+    font-size: 40px;
+}
+.textMiddleItemTitle {
+    font-size: 24px;
+}
+
+
+.textMiddleItemParrafo {
+    color: var(--color-blueOscuro);
+
+}
+
   }

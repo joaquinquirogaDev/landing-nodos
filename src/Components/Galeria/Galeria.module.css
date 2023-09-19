@@ -19,7 +19,9 @@
 }
 .cartelInfoRight{
     width: 58%;
+    
 }
+
 .cartelInfoRight h2{
     margin-bottom: 10px;
 }
@@ -39,3 +41,26 @@
     max-width: 100%;
     height: auto;
 }
+@media (max-width: 768px) {
+    .galeria{
+        padding: 30px 30px;
+        grid-template-columns: repeat(auto-fill, minmax(130px, 1fr));
+        place-items: center;
+    }
+    .cartelContainer{
+        padding: 20px 20px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+    }
+    .cartel h1{
+        font-size: 1.9em;
+        font-weight: 800;
+    
+    }
+    .cartelInfoRight{
+        width: 90%;
+        margin-top: 30px;
+    }
+  }

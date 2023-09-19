@@ -55,7 +55,7 @@ export const NivelPrimario = () => {
           list={['Ingles - 3hs semanales','Educación física - 2hs semanales' ,'Música','Tecnologia','Artes Visuales','Teatro','Filosofía','Computación']}
           imagenes={[img1,img2,img3,img4,img5,img6]}
         />
-        <div style={{padding:'40px 50px'}}>
+        <div className='classPaddingTarjetas'>
           <TarjetaProyectoESI
             parrafo='Es un espacio de enseñanza, aprendizaje que posibilita y promueve saberes y habilidades para la toma de decisiones responsables y criticas, en relación al cuidado del propio cuerpo y de los demás, a las relaciones interpersonales, ect .
             La construcción de estas nociones colabora en la expresión de sentimientos, emociones y deseos que hacen a la vincularía. 
