@@ -80,4 +80,19 @@
     .testimoniosDownTitle{
         font-size: 20px;
     }
+    /*MODAL*/
+    .modalBox{
+        height: 400px;
+        overflow-y: scroll;
+    }
+    .containerBox{
+       
+        flex-direction: column-reverse;
+    }
+    .imgModal{
+        width: 58%;
+    }
+    .info{
+        width: 100%;
+    }
   }

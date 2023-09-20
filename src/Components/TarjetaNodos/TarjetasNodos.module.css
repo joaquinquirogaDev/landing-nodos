@@ -62,6 +62,9 @@
     .TestimoniosLeftTtile {
         font-size: 20px;
     }
-    
+    .imgNodos img {
+        max-width: 90%;
+       
+    }
     
   }

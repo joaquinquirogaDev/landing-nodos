@@ -30,6 +30,7 @@
 }
 
 .NavbarItem li {
+  width: fit-content;
     cursor: pointer;
 }
 .navItem {
@@ -123,8 +124,12 @@
     z-index: 999999;
     height: 0; 
     overflow: hidden; 
-    transition: height 1s ease-in;
+    transition: height 0.3s ease-in-out; 
   }
+  .NavbarItemContainer.showMenu {
+    height: 100%; 
+  }
+  
   .closeButon{
     position: absolute;
     top: 10px;
@@ -140,7 +145,7 @@
     width: 100%; 
     list-style: none;
     color: #1C57A7;
-
+    width: fit-content;
   }
 
    .NavbarItemContainer li:last-child {

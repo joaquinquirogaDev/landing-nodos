@@ -107,7 +107,7 @@ export const Navbar = () => {
             </div>
 
             <div className={`${style.NavbarItemContainer} ${showMenu ? style.showMenu : style.menuNone}`}>
-                <img className={style.closeButon} src={close} onClick={closeMenu} alt="" />
+                <img className={style.closeButon} src={close} onClick={closeMenu} alt="close" />
                 <li onClick={() => navigateURL('/')}>HOME</li>
                 <div
                     className={style.nivelContainer}

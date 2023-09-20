@@ -63,7 +63,10 @@
     margin: 0px;
   }
   @media (max-width: 768px) {
-    
+      .formContactoBox{
+        padding: 20px 20px;
+        gap: 28px;
+    }
     .formInput {
         align-items: center;
       }
@@ -80,15 +83,17 @@
       }
       .InfoContacto {
         width: 100%; 
-        padding: 10px; 
       }
     
       .infoTitle {
-        font-size: 18px; 
+        font-size: 28px; 
       }
     
       .InfoContacto p {
         font-size: 14px; 
       }
+      .InfoContacto h2{
+        font-size: 20px;
+    }
     }
     

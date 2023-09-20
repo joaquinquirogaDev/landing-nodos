@@ -13,10 +13,19 @@
     color: white;
     font-weight: 700;
     font-size: 20px;
+    line-height: 20px;
 }
 @media (max-width: 768px) {
     .cartelHeroContainer{
         padding: 20px 20px;
         
+    }
+    .cartelHeroContainer h1{
+        font-size: 26px;
+       
+    }
+    .cartelHeroContainer p{
+        
+        font-size: 16px;
     }
 }

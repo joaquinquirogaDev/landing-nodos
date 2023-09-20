@@ -88,6 +88,7 @@
 }
 .cardItemInfo h1{
     font-weight: 800;
+    text-align: center;
 }
 .ButtonNovedades{
     color: white;
@@ -133,5 +134,14 @@
     .textDeporte p{
         line-height: 18px;
         font-weight: 700;
+    }
+    .ButtonDiciplinas{
+        font-size: 0.9em;
+        padding: 10px 20px;
+    }
+    .containerModal{
+        padding: 20px;
+        height: 400px;
+        overflow-y: scroll;
     }
   }
