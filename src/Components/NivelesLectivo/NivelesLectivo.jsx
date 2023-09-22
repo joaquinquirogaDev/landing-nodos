@@ -6,12 +6,10 @@ import style from './NivelesLectivo.module.css'
 
 export const NivelesLectivo = () => {
     return (
-        <section className={style.NivelesBox}>
             <div className={style.NivelesContainer}>
                 {nivel.map((item, index) => (
                     <CardNivelLectivo key={index} item={item} />
                 ))}
             </div>
-        </section>
     )
 }

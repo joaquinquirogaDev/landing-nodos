@@ -9,9 +9,12 @@ export const CardNivelLectivo = ({ item }) => {
         <>
             <div className={style.Container}>
                 <h1>{item.titulo}</h1>
+                <div className={style.imgLectivoCard}>
                 <img className={style.imgLectivo} src={item.img} alt="" />
+                </div>
+               
+                    <button onClick={HandleOpen}  className={style.buttonCardNivel}>Ciclo Lectivo</button>
 
-                <button onClick={HandleOpen}  className={style.buttonCardNivel}>Ciclo Lectivo</button>
             </div>
             {IsopenModal && (
                 <Modal titulo={item.titulo} HandleClose={HandleClose} IsopenModal={IsopenModal}>

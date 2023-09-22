@@ -34,8 +34,8 @@ export const CardInscripciones = () => {
                             <img src={qr} alt="QR" />
                         </div>
                     </div>
+                    <Button widthButton='93%'>Pre-inscríbete  aquí </Button>
 
-                    <Button widthButton='85%'>Pre-inscríbete  aquí </Button>
 
                 </div>
 

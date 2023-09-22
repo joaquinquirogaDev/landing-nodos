@@ -71,9 +71,12 @@
 /* hero abajo */
 
 .heroDown {
-    padding: 25px 35px;
+    padding: 20px 40px;
     color: white;
     width: 100%;
+    max-width: 1400px;
+    margin: 0 auto;
+    overflow: hidden;
     background-color: var(--color-blueOscuro);
 }
 
@@ -114,5 +117,7 @@
     .heroCardImg{
         display: none;
     }
-    
+    .heroDown {
+        padding: 20px 20px;
+}
   }
