@@ -5,6 +5,7 @@ import style from './CardNivelLectivo.module.css'
 export const CardNivelLectivo = ({ item }) => {
 
     const [IsopenModal,HandleClose,HandleOpen] = useModal(false);
+    console.log(item)
     return (
         <>
             <div className={style.Container}>
@@ -23,8 +24,18 @@ export const CardNivelLectivo = ({ item }) => {
                             <img src={item.imgModal} alt="" />
                         </div>
                         <div className={style.infoModal}>
-                            <h1>Ciclo Lectivo  2024</h1>
-                            
+                            <h1>{item.subtituloModal}</h1>
+                            <p>{item.descripcionModal}</p>
+                            <div className={style.infoSalas}>
+                                {item.salas.map((sala,index) => (
+                                    <div key={index} className={style.infoSalasItem}>
+                                        <h2>{sala.tituloSala}</h2>
+                                        {sala.descripcionSala?.split('\n').map((parrafo, index) => (
+                                            <p key={index}>{parrafo}</p>
+                                        ))}
+                                    </div>
+                                ))}
+                            </div>
                         </div>
                     </div>
                 </Modal>
