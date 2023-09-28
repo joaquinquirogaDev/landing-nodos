@@ -19,25 +19,50 @@ const nivel = [
     titulo: "Nivel Primario - Ciclo Lectivo",
     img: nivelPrimario,
     imgModal: imgModalnivelPrimario,
-    subtituloModal: "Nivel Inicial: Formando los Cimientos del Futuro",
+    subtituloModal: "Nivel Primario: Forjando las Mentes del Futuro",
     descripcionModal:
-      "En el Nivel Inicial del Colegio San Agustín, nuestra misión es impulsar una formación integral en niños de 3 a 5 años. A través de experiencias sistemáticas y significativas, fomentamos la adquisición de conocimientos, habilidades, actitudes y valores, inspirados en los principios de verdad, saber y amor de San Agustín.",
+      "En el Colegio San Agustín, el Nivel Primario es una etapa fundamental en el viaje educativo de nuestros estudiantes. Nuestro compromiso es brindar una educación integral que prepare a los niños para un mundo en constante cambio. Nos basamos en los valores de verdad, saber y amor, inspirados en la filosofía de San Agustín, para guiar a nuestros alumnos en su camino hacia el crecimiento académico y personal.",
     salas: [
       {
-        tituloSala: "Sala de 3 (tres)",
+        tituloSala: "Educación Física",
         descripcionSala:
-          "En esta etapa, fomentamos la exploración y el aprendizaje a través de actividades lúdico-pedagógicas.\n\n Los niños se sumergen en diferentes lenguajes, interactuando y compartiendo experiencias en artes visuales, música, educación física, inglés y expresión corporal.",
+          "Enseñamos a nuestros estudiantes a apreciar y cuidar su cuerpo, promoviendo la autonomía, la autoestima y habilidades motoras que fomentan una vida saludable y la confianza en sí mismos y en los demás.",
       },
 
       {
-        tituloSala: "Sala de 4 (cuatro)",
+        tituloSala: "Ingles",
         descripcionSala:
-        'Aquí, nos enfocamos en fomentar la independencia y la alfabetización inicial.\n\n Los estudiantes participan en proyectos enriquecedores y experiencias educativas que incluyen arte, música, educación física, inglés, expresión corporal e informática.\n\n La carga horaria se extiende para brindarles más tiempo de aprendizaje.'
+        'Nuestra enseñanza del inglés se centra en brindar a los estudiantes las habilidades necesarias para participar en prácticas sociales de lenguaje orales y escritas con hablantes nativos y no nativos del inglés, preparándolos para un mundo globalizado.'
       },
       {
-        tituloSala: "Sala de 5 (cinco)",
+        tituloSala: "Música",
         descripcionSala:
-        'Nuestra meta en esta etapa es preparar a los alumnos para el próximo paso: la transición a 1° grado. Fomentamos la adquisición de habilidades esenciales y valores necesarios para el desarrollo integral de cada niño. Esto incluye el conocimiento y control de sus cuerpos, la comunicación efectiva y la exploración del entorno natural, familiar y social. La alfabetización inicial se aborda de manera lúdica y progresiva, valorando el esfuerzo y la disposición por encima de los resultados finales.'
+        'A través de la música, nuestros alumnos conectan con su patrimonio cultural y desarrollan habilidades artísticas y creatividad. La música también enriquece su comprensión de otras áreas del conocimiento.'
+      },
+      {
+        tituloSala:'Tecnología',
+        descripcionSala:
+        "Fomentamos la exploración y la resolución creativa de problemas a través del diseño y la construcción de elementos. Nuestra educación tecnológica promueve la colaboración y el entendimiento de procesos tecnológicos."
+      },
+      {
+        tituloSala:'Artes Visuales',
+        descripcionSala:
+        "Esta materia les permite explorar aspectos formales y conceptuales de la historia del arte, desarrollar capacidades perceptivas y expresivas, y fomentar una conciencia social crítica a través de la expresión artística."
+      },
+      {
+        tituloSala:'Filosofía',
+        descripcionSala:
+        "Nuestra enseñanza de la filosofía busca estimular el pensamiento crítico, el debate y la reflexión. Creemos en aceptar diversas opiniones y vincular conocimientos para abordar los problemas de la actualidad."
+      },
+      {
+        tituloSala:'Computación',
+        descripcionSala:
+        "Aquí, los alumnos desarrollan habilidades intelectuales para trabajar con símbolos, ideas, imágenes, conceptos y abstracciones. Promovemos la producción y circulación de información en el contexto de las TIC."
+      },
+      {
+        tituloSala:'Teatro',
+        descripcionSala:
+        "La práctica teatral promueve la convivencia y el trabajo en equipo, impulsando la comunicación y la expresión. Es una disciplina interdisciplinaria que permite trabajar en diversas áreas del conocimiento."
       },
     ],
   },
