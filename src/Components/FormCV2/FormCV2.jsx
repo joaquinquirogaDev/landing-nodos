@@ -1,10 +1,28 @@
 //style 
-import style from './FormCV.module.css'
+import style from './FormCV2.module.css'
 import { Controller, useForm } from 'react-hook-form';
-export const FormCV = () => {
+
+export const FormCV2 = () => {
     const { register, handleSubmit, formState: { errors }, control } = useForm();
-    const onSubmit = (data) => {
-            console.log(data)
+    const onSubmit = async(data) => {
+           /*  const {name ,email,archivo,asunto,mensaje } = data
+            console.log(name,email,archivo,asunto,mensaje)
+            const formData = new FormData()
+            formData.append('archivo',archivo[0])
+            formData.append('name', name)
+            formData.append('email', email)
+            formData.append('asunto', asunto)
+            formData.append('mensaje', mensaje)
+            console.log(formData) */
+            try {
+               
+                const response = await fetch('URL',{
+                    method:'POST',
+                    body:data
+                })
+            } catch (error) {
+                console.log(error)
+            }
         }
   return (
     <section className={style.formContactoBox}>

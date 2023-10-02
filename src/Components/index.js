@@ -7,7 +7,7 @@ export * from './CartelNiveles/CartelNiveles';
 export * from './Deporte/Deporte';
 export * from './DeporteNovedades/DeporteNovedades';
 export { default as Footer } from './Footer/Footer';
-export * from './FormCV/FormCV';
+export * from './FormCV2/FormCV2';
 export * from './FormContacto/FormContacto';
 export * from './Galeria/Galeria';
 export * from './Hero/Hero';

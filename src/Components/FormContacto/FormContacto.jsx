@@ -6,8 +6,16 @@ import { useForm } from 'react-hook-form';
 
 export const FormContacto = () => {
     const { register, handleSubmit, formState: { errors }, control } = useForm();
-    const onSubmit = (data) => {
-            console.log(data)
+    const onSubmit = async(data) => {
+        try {
+            const response = await fetch('URL',{
+                method:'POST',
+                body:data
+            })
+        } catch (error) {
+            
+        }
+        
         }
   return (
         <section className={style.formContactoBox}>
