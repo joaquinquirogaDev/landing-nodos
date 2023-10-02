@@ -30,26 +30,27 @@ export const FormCV2 = () => {
         <h1 className={style.formTitle}>Escribí tu consulta y te responderemos en breve.</h1>
         <form className={style.formInput} onSubmit={handleSubmit(onSubmit)}>
             <div className={style.inputGroup}>
-                <input {...register('name', { required: true })} type="text" name='name' placeholder='Ingresa tu nombre '/>
-                {errors.name && <span className={style.errors}>Este campo es requerido</span>}
+                <input {...register('nombre', { required: true })} type="text" name='nombre' placeholder='Ingresa tu nombre '/>
+                {errors.nombre && <span className={style.errors}>Este campo es requerido</span>}
+            </div>
+            <div className={style.inputGroup}>
+            <input {...register('apellido', { required: true })} type="text" name='apellido' placeholder='Ingresa el apellido '/>
+            {errors.apellido && <span className={style.errors}>Este campo es requerido</span>}
             </div>
             <div className={style.inputGroup}>
             <input {...register('email', { required: true })} type="email" name='email' placeholder='Ingresa tu correo electrónico'/>
             {errors.email && <span className={style.errors}>Este campo es requerido</span>}
             </div>
-            <div className={style.inputGroup}>
+           {/*  <div className={style.inputGroup}>
             <input {...register('asunto', { required: true })} type="text" name='asunto' placeholder='Ingresa el asunto '/>
             {errors.asunto && <span className={style.errors}>Este campo es requerido</span>}
-            </div>
-            <div className={style.inputGroup}>
-            <input {...register('mensaje', { required: true })} type="text" name='mensaje' placeholder='Ingresa tu mensaje'/>
-            {errors.mensaje && <span className={style.errors}>Este campo es requerido</span>}
-            </div>
+            </div> */}
+            
             <div className={style.inputGroup}>
             <Controller
                 name="archivo"
                 control={control}
-                render={({ field }) => <input type="file" {...field} />}
+                render={({ field }) => <input type="file" name='archivo' {...field} />}
                 />
             {errors.mensaje && <span className={style.errors}>Este campo es requerido</span>}
             </div>

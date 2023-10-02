@@ -7,14 +7,15 @@ import { useForm } from 'react-hook-form';
 export const FormContacto = () => {
     const { register, handleSubmit, formState: { errors }, control } = useForm();
     const onSubmit = async(data) => {
-        try {
+         console.log(data)
+      /*   try {
             const response = await fetch('URL',{
                 method:'POST',
                 body:data
             })
         } catch (error) {
             
-        }
+        } */
         
         }
   return (
@@ -23,8 +24,12 @@ export const FormContacto = () => {
                 <h1 className={style.formTitle}>Escribí tu consulta y te responderemos en breve.</h1>
                 <form className={style.formInput} onSubmit={handleSubmit(onSubmit)}>
                     <div className={style.inputGroup}>
-                        <input {...register('name', { required: true })} type="text" name='name' placeholder='Ingresa tu nombre '/>
-                        {errors.name && <span className={style.errors}>Este campo es requerido</span>}
+                        <input {...register('nombre', { required: true })} type="text" name='nombre' placeholder='Ingresa tu nombre '/>
+                        {errors.nombre && <span className={style.errors}>Este campo es requerido</span>}
+                    </div>
+                    <div className={style.inputGroup}>
+                        <input {...register('apellido', { required: true })} type="text" name='apellido' placeholder='Ingresa tu apellido '/>
+                        {errors.apellido && <span className={style.errors}>Este campo es requerido</span>}
                     </div>
                     <div className={style.inputGroup}>
                     <input {...register('email', { required: true })} type="email" name='email' placeholder='Ingresa tu correo electrónico'/>
