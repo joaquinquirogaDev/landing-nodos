@@ -34,7 +34,10 @@ export const CardInscripciones = () => {
                             <img src={qr} alt="QR" />
                         </div>
                     </div>
-                    <Button widthButton='93%'>Pre-inscríbete  aquí </Button>
+                    <Button widthButton='93%'>
+                        <a style={{color:'white', textDecoration:'none'}} href="https://forms.gle/LhjZZf6wZdY5VFZq8" target='_blank'>Pre-inscríbete  aquí </a>
+
+                    </Button>
 
 
                 </div>

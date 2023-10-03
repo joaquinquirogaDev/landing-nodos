@@ -187,31 +187,31 @@ const dropsRedes = [
   },
 ];
 const Secciones = {
-  NumerosTelefonos: [
+  Telefonos: [
     {
-      Telefonos: 23213,
+      Telefonos: 2645713956,
     },
     {
-      TelefonoFijo: 2321312,
+      TelefonoFijo: 4235013,
     },
     {
-      Fax: 12312,
+      Fax: 2644235013,
     },
   ],
   Mail: [
     {
-      Contacto1: "ejemplo1",
+      email: "Secretaria@colegiosanagustinsj.com.ar",
     },
-    {
+    /* {
       Contacto2: "ejemplo2",
     },
     {
       Contacto3: "ejemplo3",
-    },
+    }, */
   ],
   Visitanos: [
     {
-      lugar1: "Lugar1",
+      lugar: "Av libertador 3880 oeste",
     },
     {
       Lugar2: "Lugar2",

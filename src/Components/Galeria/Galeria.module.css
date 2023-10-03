@@ -50,7 +50,7 @@
     .cartelContainer{
         padding: 20px 20px;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: space-between;
         flex-direction: column;
     }

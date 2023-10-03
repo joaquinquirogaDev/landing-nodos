@@ -1,25 +1,37 @@
 //style 
 import style from './FormCV2.module.css'
+//axios
+import axios from 'axios';
+import { useState } from 'react';
+//useForm
 import { Controller, useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
 export const FormCV2 = () => {
-    const { register, handleSubmit, formState: { errors }, control } = useForm();
+    const [archivo,setArchivo ] = useState(null)
+    const { register, handleSubmit, formState: { errors }, control,reset } = useForm();
     const onSubmit = async(data) => {
-           /*  const {name ,email,archivo,asunto,mensaje } = data
-            console.log(name,email,archivo,asunto,mensaje)
-            const formData = new FormData()
-            formData.append('archivo',archivo[0])
-            formData.append('name', name)
-            formData.append('email', email)
-            formData.append('asunto', asunto)
-            formData.append('mensaje', mensaje)
-            console.log(formData) */
+            const formData = new FormData();
+            formData.append('nombre', data.nombre);
+            formData.append('apellido', data.apellido);
+            formData.append('email', data.email);
+            formData.append('archivo', archivo);
+
+            handleSubmitCV(formData)
+            
+        }
+        const handleSubmitCV = async(data) =>{
             try {
                
-                const response = await fetch('URL',{
-                    method:'POST',
-                    body:data
-                })
+                const response = await axios.post('http://127.0.0.1:8000/api/cargar_cv',data)
+
+                if(response.data.status){
+                    console.log(response)
+                    toast.success(response.data.mensaje)
+                    reset()
+                    setArchivo(null)
+
+                }
             } catch (error) {
                 console.log(error)
             }
@@ -28,7 +40,7 @@ export const FormCV2 = () => {
     <section className={style.formContactoBox}>
     <div className={style.formContainer}>
         <h1 className={style.formTitle}>Escribí tu consulta y te responderemos en breve.</h1>
-        <form className={style.formInput} onSubmit={handleSubmit(onSubmit)}>
+        <form className={style.formInput} onSubmit={handleSubmit(onSubmit)} encType="multipart/form-data">
             <div className={style.inputGroup}>
                 <input {...register('nombre', { required: true })} type="text" name='nombre' placeholder='Ingresa tu nombre '/>
                 {errors.nombre && <span className={style.errors}>Este campo es requerido</span>}
@@ -41,18 +53,10 @@ export const FormCV2 = () => {
             <input {...register('email', { required: true })} type="email" name='email' placeholder='Ingresa tu correo electrónico'/>
             {errors.email && <span className={style.errors}>Este campo es requerido</span>}
             </div>
-           {/*  <div className={style.inputGroup}>
-            <input {...register('asunto', { required: true })} type="text" name='asunto' placeholder='Ingresa el asunto '/>
-            {errors.asunto && <span className={style.errors}>Este campo es requerido</span>}
-            </div> */}
+          
             
             <div className={style.inputGroup}>
-            <Controller
-                name="archivo"
-                control={control}
-                render={({ field }) => <input type="file" name='archivo' {...field} />}
-                />
-            {errors.mensaje && <span className={style.errors}>Este campo es requerido</span>}
+                <input type="file" name='archivo' defaultValue={archivo} onChange={(e)=> setArchivo(e.target.files[0])}/>
             </div>
 
             <button>CARGAR CV</button>

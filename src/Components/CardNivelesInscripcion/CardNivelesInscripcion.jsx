@@ -4,6 +4,7 @@ import style from './CardNivelesInscripcion.module.css'
 //images
 import fondo from '../../assets/fondo/fondoInscripciones.png'
 export const CardNivelesInscripcion = ({nivel,parrafo }) => {
+   
   return (
     <div className={style.cardInscripcionesBox}>
             <div className={style.cardInscripcionesContainer}>
@@ -27,7 +28,9 @@ export const CardNivelesInscripcion = ({nivel,parrafo }) => {
                         
                     </div>
 
-                    <Button widthButton='75%'>Pre-inscríbete  aquí </Button>
+                    <Button widthButton='75%'>
+                        <a style={{color:'white', textDecoration:'none'}} href="https://forms.gle/LhjZZf6wZdY5VFZq8" target='_blank'>Pre-inscríbete  aquí </a>
+                    </Button>
 
                 </div>
 

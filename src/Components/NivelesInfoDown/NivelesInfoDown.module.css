@@ -2,6 +2,7 @@
     padding: 40px 50px;
     width: 100%;
     display: flex;
+    align-items: center;
     gap: 30px;
     color: var(--color-blueOscuro);
     flex-wrap: wrap;

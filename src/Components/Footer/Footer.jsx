@@ -34,9 +34,9 @@ export default function Footer() {
                         <h1 className={style.footerDownTitle}>@ 2024 Nodos Hub</h1>
 
                         <div className={style.iconFooter}>
-                            <a href=""><img src={youtube} alt="youtube" /></a>
-                            <a href=""><img src={instagram} alt="instagram" /></a>
-                            <a href=""><img src={facebook} alt="facebook" /></a>
+                            <a href="https://www.youtube.com/@colegiosanagustinsanjuanar5963" target="_blank"><img src={youtube} alt="youtube" /></a>
+                            <a href="https://instagram.com/colegiosanagustinsj?igshid=MzRlODBiNWFlZA==" target="_blank"><img src={instagram} alt="instagram" /></a>
+                            <a href="https://www.facebook.com/ColegioSanAgustinsj" target="_blank"><img src={facebook} alt="facebook" /></a>
                         </div>
                     </div>
                 </div>

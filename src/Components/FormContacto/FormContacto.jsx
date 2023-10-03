@@ -1,21 +1,26 @@
 //style
+import axios from 'axios';
 import style from './FormContacto.module.css'
 //form
 import { useForm } from 'react-hook-form';
+import toast from 'react-hot-toast';
 
 
 export const FormContacto = () => {
-    const { register, handleSubmit, formState: { errors }, control } = useForm();
+    const { register, handleSubmit, formState: { errors }, control,reset } = useForm();
     const onSubmit = async(data) => {
-         console.log(data)
-      /*   try {
-            const response = await fetch('URL',{
-                method:'POST',
-                body:data
+        try {
+            const response = await axios.post('http://127.0.0.1:8000/api/consultas',data,{
+                withCredentials:'true'
             })
+
+            if(response.data.status){
+                toast.success(response.data.mensaje)
+                reset()
+            }
         } catch (error) {
-            
-        } */
+            console.log(error)
+        }
         
         }
   return (
@@ -52,11 +57,11 @@ export const FormContacto = () => {
             <div className={style.InfoContacto}>
                 <h1 className={style.infoTitle}>Secretaria</h1>
                 <p>Secretaria Horarios de atención: 07:30hs a 18:00hs</p>
-                <p>Teléfono de contacto 4235013</p>
+                <p>Teléfono de contacto: 4235013</p>
                 <p>WhatsApp: 2645713956</p>
                 <div>
                     <p>Correo electrónico:</p>
-                    <p> secretaia@colegiosanagustinsj.com.ar</p>
+                    <p> Secretaria@colegiosanagustinsj.com.ar</p>
                 </div>
                 
             </div>
