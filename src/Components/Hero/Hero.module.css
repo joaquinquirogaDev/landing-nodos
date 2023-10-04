@@ -120,4 +120,12 @@
     .heroDown {
         padding: 20px 20px;
 }
+.heroDownLeft img {
+    width: 70%;
+   
+}
+.heroDown h1{
+    font-size: 22px;
+}
+
   }

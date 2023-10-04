@@ -194,9 +194,9 @@ const Secciones = {
     {
       TelefonoFijo: 4235013,
     },
-    {
+   /*  {
       Fax: 2644235013,
-    },
+    }, */
   ],
   Mail: [
     {
@@ -213,12 +213,12 @@ const Secciones = {
     {
       lugar: "Av libertador 3880 oeste",
     },
-    {
+   /*  {
       Lugar2: "Lugar2",
     },
     {
       Lugar3: "Lugar3",
-    },
+    }, */
   ],
 };
 

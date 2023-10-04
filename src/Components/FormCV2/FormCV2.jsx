@@ -6,9 +6,11 @@ import { useState } from 'react';
 //useForm
 import { Controller, useForm } from 'react-hook-form';
 import toast from 'react-hot-toast';
+import { Loader } from '../Loader/Loader';
 
 export const FormCV2 = () => {
     const [archivo,setArchivo ] = useState(null)
+    const [loading,setLoading] = useState(false)
     const { register, handleSubmit, formState: { errors }, control,reset } = useForm();
     const onSubmit = async(data) => {
             const formData = new FormData();
@@ -22,7 +24,7 @@ export const FormCV2 = () => {
         }
         const handleSubmitCV = async(data) =>{
             try {
-               
+                setLoading(true)
                 const response = await axios.post('http://127.0.0.1:8000/api/cargar_cv',data)
 
                 if(response.data.status){
@@ -34,6 +36,10 @@ export const FormCV2 = () => {
                 }
             } catch (error) {
                 console.log(error)
+                toast.error('ERROR')
+
+            }finally{
+                setLoading(false)
             }
         }
   return (
@@ -58,7 +64,14 @@ export const FormCV2 = () => {
             <div className={style.inputGroup}>
                 <input type="file" name='archivo' defaultValue={archivo} onChange={(e)=> setArchivo(e.target.files[0])}/>
             </div>
-
+            {loading &&
+                         <div className={style.loaderContainer}>
+                            <Loader />
+                            <div className="">
+                                <span>Enviando consulta, Espere por favor !</span>
+                            </div>
+                         </div>
+                    }
             <button>CARGAR CV</button>
         </form>
     </div>

@@ -13,6 +13,7 @@ export * from './Galeria/Galeria';
 export * from './Hero/Hero';
 export * from './HeroContacto/HeroContacto';
 export * from './HeroNovedades/HeroNovedades';
+export * from './Loader/Loader';
 export * from './Modal/Modal';
 export * from './Navbar/Navbar';
 export * from './NivelesInfo/NivelesInfo';

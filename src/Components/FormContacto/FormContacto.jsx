@@ -3,13 +3,20 @@ import axios from 'axios';
 import style from './FormContacto.module.css'
 //form
 import { useForm } from 'react-hook-form';
+//alert
 import toast from 'react-hot-toast';
+//hooks
+import { useState } from 'react';
+//componentes
+import { Loader } from '../Loader/Loader';
 
 
 export const FormContacto = () => {
+    const [loading,setLoading] = useState(false)
     const { register, handleSubmit, formState: { errors }, control,reset } = useForm();
     const onSubmit = async(data) => {
         try {
+            setLoading(true)
             const response = await axios.post('http://127.0.0.1:8000/api/consultas',data,{
                 withCredentials:'true'
             })
@@ -20,6 +27,10 @@ export const FormContacto = () => {
             }
         } catch (error) {
             console.log(error)
+            toast.error('ERROR')
+
+        } finally{
+            setLoading(false)
         }
         
         }
@@ -48,7 +59,16 @@ export const FormContacto = () => {
                     <input {...register('mensaje', { required: true })} type="text" name='mensaje' placeholder='Ingresa tu mensaje'/>
                     {errors.mensaje && <span className={style.errors}>Este campo es requerido</span>}
                     </div>
-                    
+
+                    {loading &&
+                         <div className={style.loaderContainer}>
+                            <Loader />
+                            <div className="">
+                                <span>Enviando consulta, Espere por favor !</span>
+                            </div>
+                         </div>
+                    }
+                   
 
                     <button>ENVIAR</button>
                 </form>

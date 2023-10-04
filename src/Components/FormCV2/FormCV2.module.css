@@ -63,6 +63,12 @@
     color: #A82119;
     margin: 0px;
   }
+  .loaderContainer{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    color: var(--color-blueOscuro);
+  }
   @media (max-width: 768px) {
       .formContactoBox{
         padding: 20px 20px;

@@ -13,7 +13,7 @@ function App() {
  
   return <Router>
     <div className="containerWsp">
-      <img src={logoWhatsapp} alt="" />
+     <a href="https://wa.me/5492645713956" target='_blank'><img src={logoWhatsapp} alt="" /></a> 
 
     </div>
     <Navbar />

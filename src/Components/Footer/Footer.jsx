@@ -20,7 +20,7 @@ export default function Footer() {
                                 <h1 className={style.footerTitle}>{item}</h1>
                                 {Secciones[item].map((value) => (
                                     Object.entries(value).map(([item, value]) => (
-                                        <div style={{width: '100%', display: 'flex', flexDirection: 'row', alignItems: 'center', gap: '20px'}}>
+                                        <div className={style.footerItem}>
                                             <p>{item}: </p>
                                             <p>{value}</p>
                                         </div>
