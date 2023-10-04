@@ -6,6 +6,7 @@ import heroCargarCV from '../../assets/heroCargarCV.png'
 
 export const CargarCV = () => {
   return (
+    
     <>
     <HeroContacto  img={heroCargarCV}/>
     <CartelHero
